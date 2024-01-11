@@ -17,9 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={alegreya.className}>
         <div className="min-h-screen bg-blue-950 flex flex-col items-center justify-center p-8">
-          <div>
-            <NavBar />
-          </div>
+          <NavBar />
           { children }
         </div>
       </body>

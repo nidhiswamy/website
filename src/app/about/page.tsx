@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="flex items-center justify-between w-3/5 mx-auto mt-16">
-      <div className="w-[545px] text-white text-xl font-normal font-['Alegreya']">
+    <div className="relative flex items-center justify-between w-3/5 mx-auto mt-16">
+      <div className="w-4/5 text-white text-xl font-normal font-alegreya">
         I’m Nidhi Swamy, a senior studying Computer Science at the Pennsylvania State University. I was born and raised in Bangalore, India. Since middle school, I’ve had a huge passion to move to the United States to complete my education and begin my work life. 
         <br/><br/>
         The one thing I’m most proud of, besides moving half way across the world all by myself at 18 years old, is that I can name all the countries in the world in under 6 minutes! 
