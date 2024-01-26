@@ -4,7 +4,7 @@ import WorkCard from '@/app/ui/workcard';
 export default function Experience() {
   return (
     <>
-      <div className="h-12 left-24 text-white text-4xl">Work</div>
+      <div className="absolute h-12 top-36 left-16 text-white text-4xl">Work</div>
       <div className="flex flex-row flex-wrap items-center justify-center relative">
         <WorkCard 
           company="Lutron"
@@ -36,8 +36,8 @@ export default function Experience() {
           date="Jan 2022 - Present"
           skills="Social media management, graphics, content creation"
         />
-        <div className="text-white text-4xl">Projects</div>
       </div>
+      <div className="relative h-12 top-36 left-16 text-white text-4xl">Projects</div>
     </>
   );
 }
