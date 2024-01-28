@@ -14,7 +14,7 @@ const links = [
 export default function NavLinks() {
   const pathname = usePathname();
   return (
-    <div className="absolute left-14 top-6 flex items-start gap-6">
+    <div className="absolute left-14 top-6 flex items-start gap-6 mb-8">
       {links.map((link) => {
         return (
           <Link 
