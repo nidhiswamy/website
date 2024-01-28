@@ -6,7 +6,7 @@ export default function About() {
       <div className="place-self-start size-2/3 text-white text-2xl font-normal font-alegreya">
         Hey there!
         <br/><br/>
-        I’m Nidhi Swamy, a senior studying Computer Science at the Pennsylvania State University. I was born and raised in Bangalore, India. Since middle school, I’ve had a huge passion to move to the United States to complete my education and begin my work life. 
+        I’m Nidhi Swamy, a senior studying Computer Science at the Pennsylvania State University. I was born and raised in Bangalore, India. Since middle school, I’ve dreamed about moving to the United States to complete my education and begin my work life. 
         <br/><br/>
         The one thing I’m most proud of, besides moving half way across the world all by myself at 18 years old, is that I can name all the countries in the world in under 6 minutes! 
         <br/><br/>

@@ -30,7 +30,7 @@ export default function NavLinks() {
             { link.name === 'home' ? (
               <GlobeAsiaAustraliaIcon className="w-9 h-9 left-10" />
             ) : (
-              <div className="mt-1 text-white text-xl font-normal">
+              <div className="mt-1 text-white text-2xl font-normal">
                 {link.name}
               </div>
             )}

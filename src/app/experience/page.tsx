@@ -56,7 +56,7 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto my-8">
+      <div className="container mx-auto my-8 justify-center">
         <div className="relative h-12 indent-32 text-white text-4xl my-8">Projects</div>
         <div className="relative justify-center flex flex-row flex-wrap ">
         <div className="flex-1/3 p-4">
@@ -81,6 +81,22 @@ export default function Experience() {
             link="https://www.github.com/nidhiswamy/opt-search"
             desc="A python web scraper built to scrape the OPTJobs website for specific job roles"
             skills="Python, BeautifulSoup"
+          />
+        </div>
+        <div className="flex-1/3 p-4">
+          <ProjectCard 
+            name="Personal Site"
+            link="https://github.com/nidhiswamy/website"
+            desc="My personal website built using NextJS and deployed with Vercel"
+            skills="JavaScript, App Router, TailwindCSS, Vercel"
+          />
+        </div>
+        <div className="flex-1/3 p-4">
+          <ProjectCard 
+            name="Simple To-Do App"
+            link="https://github.com/nidhiswamy/simple-todo"
+            desc="A simple to-do list application using Android Studio"
+            skills="Android Studio, Java"
           />
         </div>
         </div>

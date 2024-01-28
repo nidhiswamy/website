@@ -10,7 +10,7 @@ interface WorkCardProps {
 
 export default function WorkCard(props: WorkCardProps) {
     return (
-      <div className="flex flex-col w-[380px] h-40 mb-8">
+      <div className="flex flex-col w-80 h-40 mb-8">
           <div className="text-2xl font-bold transition-transform hover:text-zinc-300">
             <Link 
               href={`${props.link}`}
