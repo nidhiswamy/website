@@ -5,8 +5,8 @@ import { usePathname } from 'next/navigation';
 import { GlobeAsiaAustraliaIcon } from '@heroicons/react/24/outline';
 
 const links = [
-  { name: 'home', href: '/' },
-  { name: 'about', href: '/about' },
+  // { name: 'home', href: '/' },
+  { name: 'about', href: '/' },
   { name: 'experience', href: '/experience' },
   { name: 'blog', href: '/blog' },
 ];
@@ -14,7 +14,7 @@ const links = [
 export default function NavLinks() {
   const pathname = usePathname();
   return (
-    <div className="absolute left-14 top-6 flex items-start gap-6 mb-8">
+    <div className="lg:absolute lg:left-14 lg:top-6 lg:items-start items-center flex gap-6 mb-8">
       {links.map((link) => {
         return (
           <Link 
@@ -27,9 +27,9 @@ export default function NavLinks() {
               },
             )}
           >
-            { link.name === 'home' ? (
-              <GlobeAsiaAustraliaIcon className="w-9 h-9 left-10" />
-            ) : (
+              { link.name === '' ? (
+                <GlobeAsiaAustraliaIcon className="w-9 h-9 left-10" />
+              ) : (
               <div className="mt-1 text-white text-2xl font-normal">
                 {link.name}
               </div>

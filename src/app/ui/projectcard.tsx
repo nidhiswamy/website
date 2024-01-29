@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import clsx from 'clsx';
 
 interface ProjCardProps {
   name: string;
@@ -19,7 +18,7 @@ export default function ProjectCard(props: ProjCardProps) {
               {props.name}
             </Link>
           </div>
-          <div className="text-2xl mb-4">
+          <div className="text-2xl">
             {props.desc}
           </div>
           <div className="text-zinc-400 text-xl">

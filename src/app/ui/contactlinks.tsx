@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function ContactLinks() {
   return (
-    <div className="flex gap-2 absolute">
+    <div className="relative flex gap-2">
       <ContactIcon 
         name="GitHub"
         filename="github"
@@ -25,7 +25,7 @@ export default function ContactLinks() {
 
 function ContactIcon(props: {name: string, filename: string, href: string}) {
   return (
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-4">
         <Link href={ props.href } target="_blank">
           <div className="relative overflow-hidden w-8 h-8 transition-transform transform hover:scale-110">
             <Image

@@ -33,7 +33,7 @@ export default function Experience() {
               link="https://www.soc119.org/"
               title="Technical Specialist"
               date="Aug 2021 - Present"
-              skills="Teaching assistance, class management, stream production"
+              skills="Manage and run in-class podium and YouTube stream production"
             />
           </div>
           <div className="flex-1/3 p-4">
@@ -42,7 +42,7 @@ export default function Experience() {
               link="https://inclusion.engr.psu.edu/student-programs/women-in-engineering-program/index.aspx"
               title="Mathematics Facilitator"
               date="Jan 2022 - May 2023"
-              skills="Leadership, linear algebra mentoring, guidance"
+              skills="Mentored 20+ underclassmen in ETM math courses each semester"
             />
           </div>
           <div className="flex-1/3 p-4">
@@ -51,13 +51,22 @@ export default function Experience() {
               link="https://hackpsu.org"
               title="Marketing Director"
               date="Jan 2022 - Present"
-              skills="Social media management, graphics, content creation"
+              skills="Content creation, social media & team management for PSU's student-run hackathon"
+            />
+          </div>
+          <div className="flex-1/3 p-4">
+            <WorkCard 
+              company="Lion Line"
+              link="https://directory.alumni.psu.edu/s/1218/alumni/index.aspx?sid=1218&gid=4&pgid=379"
+              title="Student Caller"
+              date="Oct 2021 - May 2022"
+              skills="Fundraised $12,000+ for THON and other organizations at PSU"
             />
           </div>
         </div>
       </div>
       <div className="container mx-auto my-8 justify-center">
-        <div className="relative h-12 indent-32 text-white text-4xl my-8">Projects</div>
+        <div className="relative h-12 indent-32 text-white text-4xl my-4">Projects</div>
         <div className="relative justify-center flex flex-row flex-wrap ">
         <div className="flex-1/3 p-4">
           <ProjectCard 
@@ -72,7 +81,7 @@ export default function Experience() {
             name="Edit Poles Widget"
             link="https://www.github.com/nidhiswamy/edit-poles"
             desc="A custom data editing widget for customers using ArcGIS Web AppBuilder"
-            skills="HTML, JavaScript, ArcGIS WebApp Builder"
+            skills="JavaScript, ArcGIS WebApp Builder"
           />
         </div>
         <div className="flex-1/3 p-4">
@@ -80,7 +89,7 @@ export default function Experience() {
             name="OPT Search Web Scraper"
             link="https://www.github.com/nidhiswamy/opt-search"
             desc="A python web scraper built to scrape the OPTJobs website for specific job roles"
-            skills="Python, BeautifulSoup"
+            skills="Python"
           />
         </div>
         <div className="flex-1/3 p-4">
@@ -88,7 +97,7 @@ export default function Experience() {
             name="Personal Site"
             link="https://github.com/nidhiswamy/website"
             desc="My personal website built using NextJS and deployed with Vercel"
-            skills="JavaScript, App Router, TailwindCSS, Vercel"
+            skills="JavaScript, TailwindCSS, Vercel"
           />
         </div>
         <div className="flex-1/3 p-4">
