@@ -9,7 +9,7 @@ interface ProjCardProps {
 
 export default function ProjectCard(props: ProjCardProps) {
     return (
-        <div className="flex flex-col w-80 h-48 mb-8">
+        <div className="flex flex-col w-72 h-48 mb-4">
           <div className="text-2xl font-bold mb-4 transition-transform hover:text-zinc-300">
             <Link 
               href={`${props.link}`}
@@ -18,7 +18,7 @@ export default function ProjectCard(props: ProjCardProps) {
               {props.name}
             </Link>
           </div>
-          <div className="text-2xl">
+          <div className="text-xl">
             {props.desc}
           </div>
           <div className="text-zinc-400 text-xl">
