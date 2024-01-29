@@ -19,13 +19,13 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="relative flex flex-col lg:flex-row size-5/6 2xl:mx-auto lg:justify-between lg:items-center lg:size-7/8 xl:size-2/3xl:mt-16">
+    <div className="relative flex flex-col lg:flex-row size-5/6 2xl:mx-auto lg:justify-between lg:items-center lg:size-7/8 xl:size-2/3 xl:mt-16">
       <div className="mt-8 order-last h-fit place-self-center lg:order-first lg:size-2/3 text-white font-normal font-alegreya text-lg 2xl:place-self-start md:text-xl lg:text-2xl">
         Hey there!
         <br/><br/>
         I’m Nidhi Swamy, a senior studying computer science at the Pennsylvania State University. I was born and raised in Bangalore, India. Since middle school, I’ve dreamed about moving to the United States to complete my education and begin my work life. 
         <br/><br/>
-        Since moving here and pursuing that dream, I’ve had the amazing opportunity to not only study my passion, but also be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
+        Since moving here and pursuing that dream, I’ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
         Outside of school, I love to cook various cuisines of food, discover and play new music, run outside in nature, read, and journal. 
       <ContactLinks />
       </div>
