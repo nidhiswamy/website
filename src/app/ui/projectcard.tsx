@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { solway } from '../fonts';
 
 interface ProjCardProps {
   name: string;
@@ -9,8 +10,8 @@ interface ProjCardProps {
 
 export default function ProjectCard(props: ProjCardProps) {
     return (
-        <div className="flex flex-col w-72 h-48 mb-4">
-          <div className="text-2xl font-bold mb-4 transition-transform hover:text-zinc-300">
+        <div className="flex flex-col w-72 h-auto items-center sm:items-start">
+          <div className="text-2xl font-bold mb-2 transition-transform hover:text-zinc-300">
             <Link 
               href={`${props.link}`}
               target="_blank"
@@ -18,10 +19,10 @@ export default function ProjectCard(props: ProjCardProps) {
               {props.name}
             </Link>
           </div>
-          <div className="text-xl">
+          <div className="text-center sm:text-start text-xl mb-1">
             {props.desc}
           </div>
-          <div className="text-zinc-400 text-xl">
+          <div className={`${solway.className} text-center sm:text-start text-zinc-400 text-lg`}>
             {props.skills}
           </div>
         </div>

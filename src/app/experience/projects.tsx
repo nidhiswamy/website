@@ -1,0 +1,33 @@
+export const projects = [
+  { 
+    name: 'Parser',
+    link: 'https://www.github.com/nidhiswamy/parser',
+    desc: 'A recusive descent parser for a mini-programming language',
+    skills: 'Python, Compiler Construction',
+  },
+  { 
+    name: 'Edit Poles Widget',
+    link: 'https://www.github.com/nidhiswamy/edit-poles',
+    desc: 'A custom widget for customers to log and edit electric pole data',
+    skills: 'JavaScript, ArcGIS WebApp Builder',
+  },
+  { 
+    name: 'OPT Search Web Scraper',
+    link: 'https://www.github.com/nidhiswamy/opt-search',
+    desc: 'A python web scraper built to scrape the OPTJobs website for specific job roles',
+    skills: 'Python',
+  },
+  { 
+    name: 'Personal Site',
+    link: 'https://github.com/nidhiswamy/website',
+    desc: 'My personal website (this one!) built using NextJS and Vercel',
+    skills: 'JavaScript, TailwindCSS, Vercel',
+  },
+  { 
+    name: 'Simple To-Do App',
+    link: 'https://github.com/nidhiswamy/simple-todo',
+    desc: 'A simple to-do list application made using Android Studio',
+    skills: 'Android Studio, Java',
+  },
+];
+
