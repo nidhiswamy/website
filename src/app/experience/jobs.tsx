@@ -42,4 +42,3 @@ export const jobs = [
     skills: 'Content creation, social media & team management for PSU\'s fully student-run hackathon',
   },
 ];
-
