@@ -33,6 +33,7 @@ function ContactIcon(props: {name: string, filename: string, href: string}) {
               alt={ `${props.name} Icon` }
               height="35"
               width="35"
+              className="object-contain filter brightness-0"
             />
           </div>
         </Link>

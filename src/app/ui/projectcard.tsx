@@ -22,7 +22,7 @@ export default function ProjectCard(props: ProjCardProps) {
           <div className="text-center sm:text-start text-xl mb-1">
             {props.desc}
           </div>
-          <div className={`${solway.className} text-center sm:text-start text-zinc-400 text-lg`}>
+          <div className={`${solway.className} text-center sm:text-start text-secondary-light text-lg`}>
             {props.skills}
           </div>
         </div>

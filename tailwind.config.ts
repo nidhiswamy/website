@@ -9,12 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'highlight-work': "url('/hl-work.png')",
+        'highlight-proj': "url('/hl-proj.png')",
       },
+    },
+    colors: {
+      'secondary': '#339989',
+      'primary': '#F0FAF4',
+      'primary-dark': '#000000',
+      'primary-light': '#D2B2B3',
+      'secondary-light': '#339989',
     },
   },
   plugins: [],
 }
-export default config
+export default config;

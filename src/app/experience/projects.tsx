@@ -17,7 +17,7 @@ export const projects = [
     id: 3,
     name: 'OPT Search Web Scraper',
     link: 'https://www.github.com/nidhiswamy/opt-search',
-    desc: 'A python web scraper built to scrape the OPTJobs website for specific job roles',
+    desc: 'A web scraper built to scrape the OPTJobs website for specific job roles',
     skills: 'Python',
   },
   { 
@@ -29,9 +29,9 @@ export const projects = [
   },
   { 
     id: 5,
-    name: 'Simple To-Do App',
+    name: 'To-Do App',
     link: 'https://github.com/nidhiswamy/simple-todo',
-    desc: 'A simple to-do list application made using Android Studio',
+    desc: 'A to-do list application to manage functionality such as adding, deleting, and modifying a task.',
     skills: 'Android Studio, Java',
   },
 ];

@@ -21,16 +21,16 @@ export default function NavLinks() {
           key={link.name}
           href={link.href}
           className={ clsx(
-            "transition-transform transform hover:underline",
+            "transition-transform transform hover:underline decoration-4 decoration-secondary",
               {
-                "underline": pathname === link.href
+                "underline decoration-4 decoration-secondary": pathname === link.href
               },
             )}
           >
               { link.name === '' ? (
                 <GlobeAsiaAustraliaIcon className="w-9 h-9 left-10" />
               ) : (
-              <div className="mt-1 text-white text-2xl font-normal">
+              <div className="mt-1 text-primary-dark text-2xl font-normal">
                 {link.name}
               </div>
             )}

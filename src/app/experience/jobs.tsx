@@ -25,6 +25,14 @@ export const jobs = [
   },
   { 
     id: 4,
+    company: 'HackPSU',
+    link: 'https://hackpsu.org',
+    title: 'Marketing Director',
+    date: 'Jan 2022 - Present',
+    skills: 'Content creation, social media & team management for PSU\'s fully student-run hackathon',
+  },
+  { 
+    id: 5,
     company: 'Women in Engineering',
     link: 'https://inclusion.engr.psu.edu/student-programs/women-in-engineering-program/index.aspx',
     title: 'Mathematics Facilitator',
@@ -32,19 +40,11 @@ export const jobs = [
     skills: 'Mentored 20+ underclassmen in math courses each semester',
   },
   { 
-    id: 5,
+    id: 6,
     company: 'Lion Line',
     link: 'https://directory.alumni.psu.edu/s/1218/alumni/index.aspx?sid=1218&gid=4&pgid=379',
     title: 'Student Caller',
     date: 'Oct 2021 - May 2022',
     skills: 'Fundraised $12,000+ for THON and other organizations at PSU',
-  },
-  { 
-    id: 6,
-    company: 'HackPSU',
-    link: 'https://hackpsu.org',
-    title: 'Marketing Director',
-    date: 'Jan 2022 - Present',
-    skills: 'Content creation, social media & team management for PSU\'s fully student-run hackathon',
   },
 ];
