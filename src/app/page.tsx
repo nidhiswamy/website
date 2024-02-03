@@ -27,8 +27,8 @@ export default function About() {
         <br/><br/>
         I’m <span className="text-secondary">Nidhi Swamy</span>, a senior studying computer science at the Pennsylvania State University. 
         <br/><br/>
-        I was born and raised in Bangalore, India. Since middle school, I’ve dreamed about moving to the United States to complete my education and begin my career. 
-        Since moving here and pursuing that dream, I’ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
+        I was born and raised in Bangalore, India. Since middle school, I&apos;ve dreamed about moving to the United States to complete my education and begin my career. 
+        Since moving here and pursuing that dream, I&apos;ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
       <ContactLinks />
       </div>
       <div className="order-1 lg:order-2 place-self-center xl:size-fit">
@@ -43,8 +43,8 @@ export default function About() {
       <div className="h-fit order-4 lg:order-4 place-self-center w-fit text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl">
         Outside of school, I love cooking various cuisines of food (especially Indian and Korean), discovering and playing new music, running outside in nature, reading, and journaling.
         <br/><br/>
-        This picture is from me talking to over 800 students in SOC 119, a class I've been involved with since my freshman year. 
-        From someone who experienced intense social and public speaking anxiety, I am grateful to have found this class that has transformed me into someone who is capable of conversing with such a huge group of students and having the opportunity to network with inspiring speakers and facilitators. 
+        This picture is from me talking to over 800 students in SOC 119, a class I&apos;ve been involved with since my freshman year. 
+        From someone who experienced intense social and public speaking anxiety, I am grateful to have found this class that has transformed me into someone who is capable of conversing with such a huge group of students and having the opportunity to network with influential speakers and facilitators. 
         Find out more about my professional work experience and personal projects <Link href="/experience" className="text-secondary hover:underline">here</Link>!
       </div>
       <div className="order-3 lg:order-3 place-self-center lg:place-self-start xl:size-fit">
