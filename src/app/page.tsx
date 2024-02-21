@@ -21,7 +21,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-12 xl:mx-auto lg:gap-x-10 lg:justify-between lg:items-center xl:size-2/3 lg:mt-24">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-12 xl:mx-auto lg:gap-x-10 lg:justify-between lg:items-center md:size-2/3 2xl:size-3/4 lg:mt-24">
       <div className="h-fit order-2 lg:order-1 place-self-center w-fit text-primary-dark text-lg 2xl:place-self-start md:text-xl 2xl:text-2xl">
         <span className="text-3xl">Hey there!
         I’m <span className="text-secondary">Nidhi Swamy</span>, a senior studying Computer Science at Penn State</span>
@@ -29,7 +29,7 @@ export default function About() {
         I was born and raised in Bangalore, India. Since middle school, I&apos;ve dreamed about moving to the United States to complete my education and begin my career. 
         Since moving here and pursuing that dream, I&apos;ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
         <br/><br/>
-        Outside of school, I love cooking various cuisines of food (especially Indian and Korean), discovering and playing new music, running outside in nature, reading, and journaling.
+        Outside of school, I love cooking various cuisines of food, discovering and playing new music, running outside in nature, reading, and journaling.
       <ContactLinks />
       </div>
       <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit">
