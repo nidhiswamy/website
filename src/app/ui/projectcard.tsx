@@ -10,8 +10,8 @@ interface ProjCardProps {
 
 export default function ProjectCard(props: ProjCardProps) {
     return (
-        <div className="flex flex-col w-72 h-auto items-center sm:items-start">
-          <div className="text-2xl font-bold mb-2 transition-transform hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
+        <div className="flex flex-col w-72 h-auto items-center lg:items-start">
+          <div className="text-2xl font-bold mb-2 hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
             <Link 
               href={`${props.link}`}
               target="_blank"
@@ -19,10 +19,10 @@ export default function ProjectCard(props: ProjCardProps) {
               {props.name}
             </Link>
           </div>
-          <div className="text-center sm:text-start text-xl mb-1">
+          <div className="text-center lg:text-start text-xl mb-1">
             {props.desc}
           </div>
-          <div className={`${solway.className} text-center sm:text-start text-secondary-light text-lg`}>
+          <div className={`${solway.className} text-center lg:text-start text-secondary-light text-lg`}>
             {props.skills}
           </div>
         </div>

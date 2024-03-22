@@ -11,14 +11,14 @@ interface WorkCardProps {
 
 export default function WorkCard(props: WorkCardProps) {
     return (
-      <div className="flex flex-col w-72 h-auto items-center sm:items-start">
-          <div className="text-2xl font-bold">
+      <div className="flex flex-col w-72 h-auto items-center lg:items-start">
+          <div className="text-[22px] lg:text-2xl font-bold text-center lg:text-start">
           {props.title}
         </div>
         <div className={`${solway.className} text-sm mb-4`}>
           {props.date}
         </div>
-        <div className="text-2xl transition-transform hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
+        <div className="text-2xl hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
           <Link 
             href={`${props.link}`}
             target="_blank"
@@ -26,7 +26,7 @@ export default function WorkCard(props: WorkCardProps) {
             {props.company}
           </Link>
         </div>
-        <div className={`${solway.className} text-center sm:text-start text-secondary-light text-lg`}>
+        <div className={`${solway.className} text-center lg:text-start text-secondary-light text-lg`}>
           {props.skills}
         </div>
       </div>

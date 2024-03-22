@@ -13,7 +13,7 @@ export default function Experience() {
             return (
               <div 
                 key={job.id} 
-                className="p-4 sm:p-1 rounded-md border border-slate-600 shadow sm:shadow-none sm:border-0"
+                className="p-4 lg:p-1 rounded-md border border-slate-600 shadow lg:shadow-none lg:border-0"
               >
                 <WorkCard 
                   company={job.company}
@@ -30,12 +30,12 @@ export default function Experience() {
 
       <div className="container mx-auto my-8 justify-center">
         <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit text-primary-dark font-bold text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Projects</div>
-        <div className="justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 md:gap-0.5 lg:gap-y-2">
+        <div className="justify-items-center grid grid-cols-1 gap-y-6 md:gap-y-8 lg:gap-y-4 md:grid-cols-2 lg:grid-cols-3 md:gap-x-0.5">
           {projects.map((project) => {
             return (
               <div 
                 key={project.id} 
-                className="p-4 sm:p-1 rounded-md border border-slate-600 sm:border-0"
+                className="p-4 lg:p-1 rounded-md border border-slate-600 lg:border-0"
               >
                 <ProjectCard 
                   name={project.name}
