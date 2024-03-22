@@ -11,7 +11,7 @@ interface ProjCardProps {
 export default function ProjectCard(props: ProjCardProps) {
     return (
         <div className="flex flex-col w-72 h-auto items-center sm:items-start">
-          <div className="text-2xl font-bold mb-2 transition-transform hover:text-zinc-300">
+          <div className="text-2xl font-bold mb-2 transition-transform hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
             <Link 
               href={`${props.link}`}
               target="_blank"

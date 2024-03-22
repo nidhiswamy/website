@@ -18,13 +18,13 @@ export default function WorkCard(props: WorkCardProps) {
         <div className={`${solway.className} text-sm mb-4`}>
           {props.date}
         </div>
-        <div className="text-2xl transition-transform hover:font-medium ">
-            <Link 
-              href={`${props.link}`}
-              target="_blank"
-            >
-              {props.company}
-            </Link>
+        <div className="text-2xl transition-transform hover:bg-opacity-40 hover:bg-secondary-light transition duration-300 ease-in-out">
+          <Link 
+            href={`${props.link}`}
+            target="_blank"
+          >
+            {props.company}
+          </Link>
         </div>
         <div className={`${solway.className} text-center sm:text-start text-secondary-light text-lg`}>
           {props.skills}

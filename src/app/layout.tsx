@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { alegreya } from './fonts';
+import { karla } from './fonts';
 import './globals.css';
 import NavBar from '@/app/ui/navbar';
 
@@ -15,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={alegreya.className}>
-        <div className="selection:bg-secondary text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8">
+      <body className={karla.className}>
+        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8">
           <NavBar />
           { children }
         </div>

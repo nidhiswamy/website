@@ -11,7 +11,7 @@ export const projects = [
     name: 'Edit Poles Widget',
     link: 'https://www.github.com/nidhiswamy/edit-poles',
     desc: 'A custom widget for customers to log and edit electric pole data',
-    skills: 'JavaScript, ArcGIS WebApp Builder',
+    skills: 'JavaScript, ArcGIS Pro',
   },
   { 
     id: 3,
@@ -31,7 +31,7 @@ export const projects = [
     id: 5,
     name: 'To-Do App',
     link: 'https://github.com/nidhiswamy/simple-todo',
-    desc: 'A to-do list application to manage functionality such as adding, deleting, and modifying a task.',
+    desc: 'An application to manage functionality such as adding, deleting, and modifying tasks.',
     skills: 'Android Studio, Java',
   },
 ];

@@ -9,7 +9,7 @@ export const jobs = [
   },
   { 
     id: 2,
-    company: 'GeoSpatial Innovations, Inc.',
+    company: 'GeoSpatial Innovations',
     link: 'https://gsiworks.com/',
     title: 'Software Engineer Intern',
     date: 'May 2022 - May 2023',

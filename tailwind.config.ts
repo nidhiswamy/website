@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-karla)'],
+      },
       backgroundImage: {
         'highlight-work': "url('/hl-work.png')",
         'highlight-proj': "url('/hl-proj.png')",

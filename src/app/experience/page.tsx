@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <>
       <div className="relative container content-center justify-items-center mx-auto my-8 lg:mt-20">
-        <div className="bg-highlight-work bg-contain px-2 w-fit text-primary-dark text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Work</div>
+        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit text-primary-dark font-bold text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Work</div>
         <div className="justify-items-center grid grid-cols-1 gap-y-6 md:gap-y-8 lg:gap-y-4 md:grid-cols-2 lg:grid-cols-3 md:gap-x-0.5">
           {jobs.map((job) => {
             return (
@@ -29,7 +29,7 @@ export default function Experience() {
       </div>
 
       <div className="container mx-auto my-8 justify-center">
-        <div className="bg-highlight-proj bg-contain px-2 w-fit text-primary-dark text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Projects</div>
+        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit text-primary-dark font-bold text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Projects</div>
         <div className="justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 md:gap-0.5 lg:gap-y-2">
           {projects.map((project) => {
             return (
@@ -51,3 +51,4 @@ export default function Experience() {
     </>
   );
 }
+        // <div className="bg-highlight-proj bg-cover px-2 w-fit text-primary-dark font-bold text-4xl my-4 mx-auto lg:mx-12 2xl:mx-20">Projects</div>
