@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Caption = ({ index, src, alt, height, width, css }) => {
+const Caption = ({ index, src, alt, height, width, css }: { index: number, src: string, alt: string, height: any, width: any, css: string }) => {
   return (
       <div>
         <Image

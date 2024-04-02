@@ -2,6 +2,11 @@ import React from 'react';
 import ContactLinks from '@/app/ui/contactlinks';
 import { karla, inter } from '@/app/fonts';
 
+interface ItemType {
+  title: string;
+  desc: string;
+}
+
 export function Title({ text }: {text: string}) {
   return (
     <div className="text-3xl sm:text-5xl mt-10 mb-4">
@@ -53,10 +58,10 @@ export function BoldText({ text }: {text: string}) {
   );
 }
 
-export function List({ items }: {items: any}) {
+export function List({ items }: { items: ItemType[] }) {
   return (
     <ol className="list-decimal list-inside my-1">
-      {items.map((item, index) => (
+      {items.map((item: ItemType, index: number) => (
         <li 
           key={index}
           className="my-2"
