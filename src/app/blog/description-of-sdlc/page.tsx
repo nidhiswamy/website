@@ -20,7 +20,7 @@ export default function BlogPost1() {
         </Body>
       <Header1 text="Planning"/>
         <Body>
-          The planning stage is the initial phase of the SDLC. It encompasses the most important aspects of project management, where the foundation of the project is laid out. In this stage, a multitude of important factors, such as the objective and scope, milestones, project timeline, and documentation are discussed. These factors are integral to the further development and sustainability of the project. This stage is almost akin to charting a course on a map before embarking on a journey; it provides a clear roadmap, aligns the team's efforts, and minimizes unexpected detours ensuring a more efficient and successful software development project. 
+          The planning stage is the initial phase of the SDLC. It encompasses the most important aspects of project management, where the foundation of the project is laid out. In this stage, a multitude of important factors, such as the objective and scope, milestones, project timeline, and documentation are discussed. These factors are integral to the further development and sustainability of the project. This stage is almost akin to charting a course on a map before embarking on a journey; it provides a clear roadmap, aligns the team&apos;s efforts, and minimizes unexpected detours ensuring a more efficient and successful software development project. 
           <br/><br/>For my site, it involved a very basic framework I created in my head. I planned the number of pages and their contents as well as some ideas for blog posts.  The target audience is hard to describe, but it is open to friends, acquaintances, recruiters, and anyone else finding a specific blog post.
         </Body>
       <Header1 text="Analysis"/>
@@ -67,7 +67,7 @@ export default function BlogPost1() {
         </Body>
       <Header1 text="Conclusion"/>
         <Body>
-          Each phase in the Software Development Life Cycle, from planning and analysis to design, implementation, testing, integration, and maintenance plays a crucial role in ensuring the success of a software project. The SDLC is a dynamic process that promotes collaboration, communication, and a systematic approach to software development. It not only ensures that the software meets user needs but also minimizes risks, controls costs, and maximizes the software's value over time. 
+          Each phase in the Software Development Life Cycle, from planning and analysis to design, implementation, testing, integration, and maintenance plays a crucial role in ensuring the success of a software project. The SDLC is a dynamic process that promotes collaboration, communication, and a systematic approach to software development. It not only ensures that the software meets user needs but also minimizes risks, controls costs, and maximizes the software&apos;s value over time. 
         </Body>
     </BlogLayout>
   );

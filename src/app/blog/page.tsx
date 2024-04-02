@@ -7,9 +7,10 @@ export default function Blog() {
       <div>
         <h1 className="mt-4 mx-auto w-full lg:w-2/3 text-sm sm:text-xl text-start sm:text-center lg:whitespace-pre-line">{blogBlurb}<span className="font-bold text-secondary">Enjoy :)</span></h1>
         <div className="sm:mt-10 grid-none sm:grid sm:grid-cols-3 sm:grid-rows-3 place-items-start sm:place-items-center gap-2 sm:gap-8">
-        { blogs.map((blog) => {
+        { blogs.map((blog, index) => {
             return (
                 <BlogPost
+                  key={index}
                   slug={blog.slug}
                   title={blog.title}
                   header={blog.header}
