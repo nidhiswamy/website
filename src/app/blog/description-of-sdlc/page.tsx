@@ -9,7 +9,7 @@ export default function BlogPost1() {
         <Body>
           In the constantly evolving realm of technology, where software applications have become integral to our daily lives, the process by which these come into existence is of extreme importance. The Software Development Life Cycle (SDLC) is a process that enables software developers, engineers, or programmers to perform structured and efficient software development on a particular program or project. 
             <Caption
-              index="1"
+              index={1}
               src="/sdlc1.png"
               alt="The Software Development Life Cycle"
               height={675}            
@@ -50,7 +50,7 @@ export default function BlogPost1() {
             ]}
           />
           <Caption
-            index="2"
+            index={2}
             src="/sdlc2.png"
             alt="Tiers of Software Testing"
             height={675}            
