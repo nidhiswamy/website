@@ -10,19 +10,26 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-karla)'],
+        blogBody: ['var(--font-inter)'],
+      },
+      content: {
       },
       backgroundImage: {
+        'inline-link': "url('/inline-link.png')",
         'highlight-work': "url('/hl-work.png')",
         'highlight-proj': "url('/hl-proj.png')",
       },
     },
     colors: {
       'secondary': '#339989',
-      'gray': '#9b6a6c',
+      'secondary-light': '#339989',
+      'secondary-extra-light': '#9FB798',
+      'dark-gray': '#36453B',
+      'gray': '#808980',
       'primary': '#F0FAF4',
       'primary-dark': '#000000',
-      'primary-light': '#D2B2B3',
-      'secondary-light': '#339989',
+      'primary-light': '#9b6a6c',
+      'primary-extra-light': '#D2B2B3',
     },
   },
   plugins: [],

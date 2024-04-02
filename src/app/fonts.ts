@@ -1,6 +1,4 @@
-import { Alegreya } from 'next/font/google';
-import { Solway } from 'next/font/google';
-import { Karla } from 'next/font/google';
+import { Alegreya, Solway, Karla, Inter } from 'next/font/google';
 
 export const alegreya = Alegreya({
   subsets: ['latin'],
@@ -19,3 +17,8 @@ export const karla = Karla({
   variable: '--font-karla',
 })
 
+export const inter = Inter({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-inter',
+})

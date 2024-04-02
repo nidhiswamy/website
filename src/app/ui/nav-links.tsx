@@ -14,23 +14,22 @@ const links = [
 export default function NavLinks() {
   const pathname = usePathname();
   return (
-    <div className="lg:absolute lg:left-14 lg:top-6 lg:items-start items-center flex gap-6 mb-8">
+    <div className="inset-x-0 top-4 justify-items-center flex gap-6 pb-8 pt-4">
       {links.map((link) => {
         return (
           <Link 
-          key={link.name}
-          href={link.href}
-          className={ clsx(
-            "transition-transform transform hover:underline decoration-4 decoration-secondary",
-              {
-                "underline decoration-4 decoration-secondary": pathname === link.href
-              },
-            )}
+            key={link.name}
+            href={link.href}
           >
               { link.name === '' ? (
                 <GlobeAsiaAustraliaIcon className="w-9 h-9 left-10" />
               ) : (
-              <div className="mt-1 text-primary-dark text-2xl font-normal">
+              <div 
+                className={ clsx(
+                  "transition-transform transform hover:underline decoration-4 decoration-secondary mt-1 text-primary-dark text-2xl font-normal",
+                    { "underline decoration-4 decoration-secondary": pathname === link.href || pathname.startsWith(link.href + '/') },
+                  )}
+              >
                 {link.name}
               </div>
             )}

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function ContactLinks() {
   return (
-    <div className="relative flex gap-2">
+    <div className="w-fit relative flex gap-2">
       <ContactIcon 
         name="GitHub"
         filename="github"
