@@ -7,13 +7,13 @@ export default function Experience() {
   return (
     <>
       <div className="relative container content-center justify-items-center mx-auto my-4">
-        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit text-primary-dark font-bold text-4xl my-4 mx-auto">Work</div>
+        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit rounded-sm px-2 text-primary-dark font-bold text-4xl my-4 mx-auto">Work</div>
         <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {jobs.map((job) => {
             return (
               <div 
                 key={job.id} 
-                className="p-4 rounded-md border border-slate-600 shadow"
+                className="p-4 rounded-md border border-slate-600 shadow hover:bg-opacity-40 hover:bg-secondary-light hover:shadow-xl transition duration-300 ease-in-out"
               >
                 <WorkCard 
                   company={job.company}
@@ -29,7 +29,7 @@ export default function Experience() {
       </div>
 
       <div className="container mx-auto my-8 justify-center">
-        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit text-primary-dark font-bold text-4xl my-4 mx-auto">Projects</div>
+        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 text-primary-dark font-bold text-4xl my-4 mx-auto">Projects</div>
         <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
             return (

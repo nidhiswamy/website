@@ -18,14 +18,14 @@
 
 import ContactLinks from '@/app/ui/contactlinks';
 import Image from 'next/image';
-import { solway } from '../app/fonts';
+import { solway } from '@/app/fonts';
 
 export default function About() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-12 mx-3 lg:gap-x-10 lg:justify-between lg:items-center sm:size-3/4 md:size-10/12 2xl:size-5/6 lg:mt-24">
       <div className={`h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
         <h1 className={`${solway.className} text-3xl pb-8`}>Hey there!
-          I’m <span className="text-secondary">Nidhi Swamy</span>, a senior studying Computer Science at Penn State</h1>
+          I’m <span className="text-secondary">Nidhi Swamy</span>, a recent Computer Science Graduate from Penn State</h1>
         <div>
           I was born and raised in Bangalore, India. Since middle school, I&apos;ve dreamed about moving to the United States to complete my education and begin my career. 
           Since moving here and pursuing that dream, I&apos;ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
@@ -34,17 +34,17 @@ export default function About() {
       </div>
       <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit">
         <Image 
-          src="/me.jpg" 
-          alt="Red Rocks, Colorado."
-          height={378}
-          width={504}
+          src="/fave.jpg" 
+          alt="Bachelor's degree graduation."
+          height={500}
+          width={500}
           className="shadow-lg"
         />
         <div className="font-sans text-gray p-2 italic text-sm text-center">
-          Red Rocks, Colorado
+          Bachelor's Degree Graduation.
         </div>
       </div>
-      <div className={`h-fit order-4 lg:order-4 place-self-center w-fit text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
+      <div className={`h-fit order-4 lg:order-4 place-self-center w-auto text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
         Some of my other interests include cooking different cuisines of food, discovering and playing new music, being in nature, reading, and journaling.
           <br/><br/>
         This picture is from SOC 119, a class I&apos;ve been involved with since my freshman year that is taken by 800+ students every semester. 
@@ -53,7 +53,7 @@ export default function About() {
       <div className="order-3 lg:order-3 place-self-center lg:place-self-start xl:size-fit">
         <Image 
           src="/soc2.jpg" 
-          alt="Me speaking in SOC119"
+          alt="SOC119 Podium in 100 Thomas, Penn State"
           height={1920}
           width={1281}
           className="shadow-lg"

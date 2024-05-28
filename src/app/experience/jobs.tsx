@@ -26,7 +26,7 @@ export const jobs = [
   { 
     id: 4,
     company: 'HackPSU',
-    link: 'https://hackpsu.org',
+    link: 'https://www.instagram.com/hack_psu/',
     title: 'Marketing Director',
     date: 'Jan 2022 - Present',
     skills: 'Content creation, social media & team management for PSU\'s fully student-run hackathon',

@@ -1,10 +1,24 @@
 import React from 'react';
+import Link from 'next/link';
 import ContactLinks from '@/app/ui/contactlinks';
 import { karla, inter } from '@/app/fonts';
 
 interface ItemType {
   title: string;
   desc: string;
+}
+
+export function Back() {
+  return (
+    <div className="justify-left w-fit">
+      <Link 
+        href="/blog"
+        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light duration-300 p-2"
+      >
+        ← Back
+      </Link>
+    </div>
+  );
 }
 
 export function Title({ text }: {text: string}) {
@@ -86,6 +100,7 @@ const BlogLayout = ({ title, desc, children }: {title: string, desc: string, chi
   return (
     <div className="flex flex-col w-full sm:w-3/4 min-h-screen max-h-full">
       <header className="text-center items-center">
+        <Back />
         <Title text={title}/>
         <Description text={desc}/>
       </header>
