@@ -41,7 +41,7 @@ export default function About() {
           className="shadow-lg"
         />
         <div className="font-sans text-gray p-2 italic text-sm text-center">
-          Bachelor's Degree Graduation.
+          Bachelor&apos;s Degree Graduation.
         </div>
       </div>
       <div className={`h-fit order-4 lg:order-4 place-self-center w-auto text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
