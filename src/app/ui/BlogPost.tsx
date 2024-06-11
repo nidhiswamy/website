@@ -16,7 +16,8 @@ interface BlogProps {
 export default function BlogPost(props: BlogProps) {
   return (
       <Link 
-        href={`/blog/${props.slug}`}
+        href={`${props.slug}`}
+        target="_blank"
         className={`${props.visibility} h-min sm:h-full w-full transition-none sm:transition sm:hover:bg-opacity-40 sm:hover:bg-secondary-light sm:hover:shadow-xl duration-300 ease-in-out`}
       >
           <div className="border rounded-md border-slate-600 px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full">

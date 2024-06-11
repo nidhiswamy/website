@@ -1,6 +1,6 @@
 export const blogs = [
   {
-    slug: "description-of-sdlc",
+    slug: "/blog/description-of-sdlc",
     title: "The Software Development Life Cycle",
     header: "A high-level description of the Software Development Life Cycle (SDLC) and its relevance to this website",
     date: "1st April, 2024",
@@ -9,7 +9,16 @@ export const blogs = [
     tags: ["Software Development"],
   },
   {
-    slug: "understanding-the-developers-mind",
+    slug: "https://nidhiswamyblog.notion.site/Git-GitHub-Basics-d3a6e031bf054e7097d304109ad208f8?pvs=4",
+    title: "Git & GitHub Basics",
+    header: "The basics of Git and GitHub highlighted by me using tips, tutorials, and insights. Built using Notion Sites.",
+    date: "11th June, 2024",
+    readtime: "8 minute",
+    visibility: "",
+    tags: ["Software Development", "Git"],
+  },
+  {
+    slug: "/blog/understanding-the-developers-mind",
     title: "Understanding The Developer's Mind",
     header: "A high-level psychological summary of the brain of a software developer, compiled using my knowledge of neuroscience.",
     date: "29th March, 2024",
@@ -18,7 +27,7 @@ export const blogs = [
     tags: ["Psychology", "Software"],
   },
   {
-    slug: "the-art-of-attention",
+    slug: "/blog/the-art-of-attention",
     title: "The Art of Attention",
     header: "A portfolio of my creations of user-focused, captivating, and engaging graphic design for HackPSU marketing material through Canva",
     date: "28th Februrary, 2024",
