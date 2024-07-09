@@ -2,7 +2,7 @@ export const blogs = [
   {
     slug: "/blog/description-of-sdlc",
     title: "The Software Development Life Cycle",
-    header: "A high-level description of the Software Development Life Cycle (SDLC) and its relevance to this website",
+    header: "A high-level description of the Software Development Life Cycle (SDLC) and its relevance to this website.",
     date: "1st April, 2024",
     readtime: "10 minute",
     visibility: "",
@@ -127,4 +127,4 @@ export const blogs = [
   },
 ];
 
-export const blogBlurb = "Welcome to my blog page! I created this space on the internet for me to express my thoughts as I grow to travel and experience the world, face new challenges, or find things that fascinate me.\nI hope you like reading these as much as I liked writing them. "
+export const blogBlurb = "Welcome to my blog! I created this space on the internet for me to express my thoughts as I grow to travel and experience the world, face new challenges, or find things that fascinate me.\nI hope you like reading these as much as I liked writing them. "
