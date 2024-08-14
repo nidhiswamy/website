@@ -6,7 +6,9 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: 'Nidhi Swamy',
-  description: 'My personal portfolio website',
+  description: 'Nidhi Swamy personal website',
+  creator: 'Nidhi Swamy',
+  keywords: ['nidhiswamy.com', 'Nidhi Swamy', 'Nidhi Swamy Penn State']
 }
 
 export default function RootLayout({
