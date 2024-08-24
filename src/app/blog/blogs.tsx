@@ -11,7 +11,7 @@ export const blogs = [
   {
     slug: "/blog/git-basics",
     title: "Git & GitHub Basics",
-    header: "The basics of Git and GitHub highlighted by me using tips, tutorials, and insights. Built using Notion Sites.",
+    header: "The basics of Git and GitHub highlighted by me using tips, tutorials, and insights.",
     date: "11th June, 2024",
     readtime: "8 minute",
     visibility: "",
