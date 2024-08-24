@@ -9,7 +9,7 @@ export const blogs = [
     tags: ["Software Development"],
   },
   {
-    slug: "https://nidhiswamyblog.notion.site/Git-GitHub-Basics-d3a6e031bf054e7097d304109ad208f8?pvs=4",
+    slug: "/blog/git-basics",
     title: "Git & GitHub Basics",
     header: "The basics of Git and GitHub highlighted by me using tips, tutorials, and insights. Built using Notion Sites.",
     date: "11th June, 2024",

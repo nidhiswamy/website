@@ -1,6 +1,12 @@
 export const jobs = [
   { 
-    id: 1,
+    company: 'Ringy',
+    link: 'https://www.ringy.com',
+    title: 'Full Stack Software Engineer',
+    date: 'Aug 2024 - Present',
+    skills: 'Currently working as a full-time software engineer at Ringy in Denver, Colorado',
+  },
+  { 
     company: 'Lutron Electronics',
     link: 'https://commercial.lutron.com/us/en/whole-building-systems/athena',
     title: 'Software Engineer Intern',
@@ -8,7 +14,6 @@ export const jobs = [
     skills: 'React, TypeScript, AWS cloud services, Jest unit testing',
   },
   { 
-    id: 2,
     company: 'GeoSpatial Innovations',
     link: 'https://gsiworks.com/',
     title: 'Software Engineer Intern',
@@ -16,7 +21,6 @@ export const jobs = [
     skills: 'ArcGIS, JavaScript, PowerShell scripting, RestAPI services',
   },
   { 
-    id: 3,
     company: 'SOC 119, Dr. Sam Richards',
     link: 'https://www.soc119.org/',
     title: 'Technical Specialist',
@@ -24,15 +28,6 @@ export const jobs = [
     skills: 'Manage and run in-class podium and YouTube stream production',
   },
   { 
-    id: 4,
-    company: 'HackPSU',
-    link: 'https://www.instagram.com/hack_psu/',
-    title: 'Marketing Director',
-    date: 'Jan 2022 - Present',
-    skills: 'Content creation, social media & team management for PSU\'s fully student-run hackathon',
-  },
-  { 
-    id: 5,
     company: 'Women in Engineering',
     link: 'https://inclusion.engr.psu.edu/student-programs/women-in-engineering-program/index.aspx',
     title: 'Mathematics Facilitator',
@@ -40,7 +35,6 @@ export const jobs = [
     skills: 'Mentored 20+ underclassmen in math courses each semester',
   },
   { 
-    id: 6,
     company: 'Lion Line',
     link: 'https://directory.alumni.psu.edu/s/1218/alumni/index.aspx?sid=1218&gid=4&pgid=379',
     title: 'Student Caller',

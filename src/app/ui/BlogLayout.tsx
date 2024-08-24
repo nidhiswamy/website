@@ -4,7 +4,7 @@ import ContactLinks from '@/app/ui/contactlinks';
 import { karla, inter } from '@/app/fonts';
 
 interface ItemType {
-  title: string;
+  title?: string;
   desc: string;
 }
 
@@ -42,7 +42,7 @@ export function Description({ text }: {text: string}) {
 
 export function Header1({ text }: {text: string}) {
   return (
-    <div className={ `${karla.className} text-2xl sm:text-4xl mt-8 mb-4` }>
+    <div className={ `${karla.className} text-2xl font-bold sm:text-4xl mt-8 mb-4` }>
       {text}
     </div>
   );
@@ -50,7 +50,7 @@ export function Header1({ text }: {text: string}) {
 
 export function Header2({ text }: {text: string}) {
   return (
-    <div className="text-2xl mb-2">
+    <div className="text-2xl font-semibold mb-2 mt-4">
       {text}
     </div>
   );
@@ -80,11 +80,31 @@ export function List({ items }: { items: ItemType[] }) {
           key={index}
           className="my-2"
         >
-          <div className="font-extrabold inline">{item.title}: </div>
+          {item.title && <div className="font-extrabold inline">{item.title}: </div>}
           {item.desc}
         </li>
       ))}
     </ol>
+  );
+}
+
+export function Code({ text }: {text: string}) {
+  return (
+    <div className="bg-primary text-secondary p-2 rounded-md">
+      {text}
+    </div>
+  );
+}
+
+export function LinkText({ text, href }: {text: string, href: string}) {
+  return (
+    <Link
+      href={href}
+      target='_blank'
+      className="hover:text-secondary duration-300"
+    >
+      {text}
+    </Link>
   );
 }
 
