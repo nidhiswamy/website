@@ -18,11 +18,11 @@ export default function BlogPost1() {
       <Header1 text="Concepts"/>
       <Header2 text="Repository"/>
         <Body>
-        A repository (repo) is a portal/storage area that hosts all of your project's files and folders, as well as their history.
+        A repository (repo) is a portal/storage area that hosts all of your project&#39;s files and folders, as well as their history.
         </Body>
       <Header2 text="Commit"/>
         <Body>
-        A commit is a snapshot of changes made to the project’s files or folders. Committing your changes is equivalent to “saving” changes made to a file. Each commit has a unique identifier and a message describing the changes.
+        A commit is a snapshot of changes made to the project&#39;s files or folders. Committing your changes is equivalent to “saving” changes made to a file. Each commit has a unique identifier and a message describing the changes.
         </Body>
       <Header2 text="Branch"/>
         <Body>
