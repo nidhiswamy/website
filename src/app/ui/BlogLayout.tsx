@@ -88,10 +88,12 @@ export function List({ items }: { items: ItemType[] }) {
   );
 }
 
-export function Code({ text }: {text: string}) {
+export function Code({ text }: { text: string }) {
   return (
-    <div className="bg-primary text-secondary p-2 rounded-md">
-      {text}
+    <div className="relative bg-[#505050] text-primary/[0.8] p-4 font-mono">
+      <pre className="whitespace-pre-wrap break-words">
+        <code>{text}</code>
+      </pre>
     </div>
   );
 }

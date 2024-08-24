@@ -25,7 +25,7 @@ export default function About() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-12 mx-3 lg:gap-x-10 lg:justify-between lg:items-center sm:size-3/4 md:size-10/12 2xl:size-5/6 lg:mt-24">
       <div className={`h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
         <h1 className={`${solway.className} text-3xl pb-8`}>Hey there!
-          I’m <span className="text-secondary">Nidhi Swamy</span>, a recent Computer Science Graduate from Penn State</h1>
+          I’m <span className="text-secondary">Nidhi Swamy</span>,<br/>a Software Engineer</h1>
         <div>
           I was born and raised in Bangalore, India. Since middle school, I&apos;ve dreamed about moving to the United States to complete my education and begin my career. 
           Since moving here and pursuing that dream, I&apos;ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 

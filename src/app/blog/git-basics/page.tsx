@@ -50,30 +50,43 @@ export default function BlogPost1() {
             ]}
           />
         {/* Insert code here */}
+        <Code text="git config --global user.name 'Nidhi Swamy'" />
+        <Code text="git config --global user.email 'HrQp7@example.com'" />
         </Body>
       <Header1 text="Commands"/>
         <Body>
-        The basic commands for running and managing Git are highlighted below. Git has over 135 commands that are all useful in their own ways. I will update this page with them all once I have a condensed version of explaining and introducing them. 
+          The basic commands for running and managing Git are highlighted below. Git has over 135 commands that are all useful in their own ways. I will update this page with them all once I have a condensed version of explaining and introducing them. 
         </Body>
         <Header2 text="1. Initializing a Repository"/>
         <Body>
           This command initializes a local repository in the current local directory of your machine
+          <Code text="git init"/>
         </Body>
         <Header2 text="2. Status"/>
         <Body>
           This command checks the status of the current git repository which includes unstaged commits, changes, and unpushed references.
+          <Code text="git status"/>
         </Body>
         <Header2 text="3. Changes"/>
         <Body>
           This command initializes a local repository in the current local directory of your machine
+          <Code text="git add . // adds all changed files" />
+          <Code text="git add file1.ext file2.ext // adds all specified files" />
         </Body>
         <Header2 text="4. Viewing Commit History"/>
         <Body>
           This command initializes a local repository in the current local directory of your machine
+          <Code text="git log" />
         </Body>
         <Header2 text="5. Branches"/>
         <Body>
           This command initializes a local repository in the current local directory of your machine
+          <Code text="git branch <branch-name>" />
+        </Body>
+        <Header2 text="6. Merging"/>
+        <Body>
+          This command initializes a local repository in the current local directory of your machine
+          <Code text="git merge <branch-name>" />
         </Body>
       <Header1 text="Resources"/>
         <Body>
