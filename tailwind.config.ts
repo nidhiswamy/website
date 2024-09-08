@@ -26,6 +26,7 @@ const config: Config = {
       'secondary-extra-light': '#9FB798',
       'dark-gray': '#36453B',
       'gray': '#808980',
+      'tiffany-blue': '#94BFBE',
       'primary': '#F0FAF4',
       'primary-dark': '#000000',
       'primary-light': '#9b6a6c',
