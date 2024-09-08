@@ -72,7 +72,6 @@ export function BoldText({ children }: {children: React.ReactNode}) {
 }
 
 export function List({ children }: { children: React.ReactNode[] }) {
-  console.log('children: ', children);
   return (
     <ol key="list" className="list-decimal list-inside my-1">
       {children.map((child: any, index: number) => (
@@ -137,7 +136,6 @@ const BlogLayout = ({ title, desc, children }: {title: string, desc: string, chi
   return (
     <div className="flex flex-col w-full sm:w-3/4 min-h-screen max-h-full">
       <header className="text-center items-center">
-        <Back />
         <Title text={title}/>
         <Description children={desc}/>
       </header>
