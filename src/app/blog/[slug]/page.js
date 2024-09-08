@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import Markdown from "markdown-to-jsx";
 import markdownOptions from '@/utils/markdownOptions';
 import getPostMetadata from "@/utils/getPostMetadata"
-import ContactLinks from '@/app/ui/contactlinks';
+import ContactLinks from '@/app/ui/ContactLinks';
 import { 
   Title,
   Copyright,

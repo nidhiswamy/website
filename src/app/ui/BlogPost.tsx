@@ -7,9 +7,7 @@ interface BlogProps {
   date?: string;
   readtime?: string;
   visibility?: string;
-  // body: BlogSection;
   tags?: string[];
-  // children: React.ReactNode;
 }
 
 

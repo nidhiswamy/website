@@ -16,7 +16,7 @@
 //      Find out more about my professional work experience and personal projects <Link href="/experience" className="text-secondary hover:underline">here</Link>!
 // }
 
-import ContactLinks from '@/app/ui/contactlinks';
+import ContactLinks from '@/app/ui/ContactLinks';
 import Image from 'next/image';
 import { solway } from '@/app/fonts';
 

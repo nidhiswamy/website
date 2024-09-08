@@ -15,7 +15,7 @@ function Blog() {
               key={index}
               slug={blog.slug}
               title={blog.title}
-              header={blog.frontmatter.header}
+              header={blog.frontmatter.description}
               date={blog.frontmatter.date}
               readtime={blog.frontmatter.readtime}
             />

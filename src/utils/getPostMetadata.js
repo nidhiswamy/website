@@ -13,6 +13,7 @@ export default function getPostMetadata(basePath) {
     return {
       slug: fileName.replace('.md', ''),
       title: frontmatter.title,
+      description: frontmatter.description,
       frontmatter,
     };
   });
