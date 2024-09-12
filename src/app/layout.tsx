@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { karla } from './fonts';
 import './globals.css';
-import NavBar from '@/app/ui/navbar';
+import NavBar from '@/app/ui/NavBar';
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {

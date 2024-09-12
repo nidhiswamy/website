@@ -1,6 +1,9 @@
 import { 
   Header1,
   Header2,
+  Header3,
+  Header4,
+  Header5,
   Description,
   Body,
   BoldText,
@@ -18,6 +21,18 @@ export default {
     },
     h2: {
       component: Header2,
+    },
+    h3: {
+      component: Header3,
+    },
+    h4: {
+      component: Header4,
+    },
+    h5: {
+      component: Header5,
+    },
+    strong: {
+      component: BoldText
     },
     blockquote: {
       component: Description,

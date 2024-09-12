@@ -55,6 +55,30 @@ export function Header2({ children }: {children: React.ReactNode}) {
   );
 }
 
+export function Header3({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
+    </div>
+  );
+}
+
+export function Header4({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
+    </div>
+  );
+}
+
+export function Header5({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
+    </div>
+  );
+}
+
 export function Body({ children }: {children: React.ReactNode}) {
   return (
     <div className="text-md sm:text-xl">
@@ -88,6 +112,16 @@ export function List({ children }: { children: React.ReactNode[] }) {
 
 export function Code({ children }: { children: React.ReactNode }) {
   return (
+    <div className="bg-gray/[0.5] text-primary/[0.9] p-2 font-mono w-fit rounded-sm">
+      <pre className="whitespace-pre-wrap break-words">
+        <code className="text-sm">{children}</code>
+      </pre>
+    </div>
+  );
+}
+
+export function Caption({ children }: { children: React.ReactNode }) {
+  return (
     <div className="flex items-center justify-center pb-2">
       <div className="bg-tiffany-blue text-primary/[0.9] p-2 font-mono w-fit rounded-md">
         <pre className="whitespace-pre-wrap break-words">
@@ -98,15 +132,15 @@ export function Code({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function LinkText({ text, href }: {text: string, href: string}) {
+export function LinkText({ href, children }: { href: string, children: React.ReactNode }) {
   return (
-    <Link
+    <a 
+      target="_blank"
       href={href}
-      target='_blank'
-      className="hover:text-secondary duration-300"
+      className="text-secondary hover:bg-tiffany-blue/[0.3] hover:cursor-pointer"
     >
-      {text}
-    </Link>
+      {children}
+    </a>
   );
 }
 
