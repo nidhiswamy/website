@@ -26,11 +26,13 @@ export default function About() {
       <div className={`h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
         <h1 className={`${solway.className} text-3xl pb-8`}>Hey there!
           I’m <span className="text-secondary">Nidhi Swamy</span>,<br/>a Software Engineer.</h1>
-        <div>
+        <div className="flex flex-col gap-4">
+          <p>
           I was born and raised in Bangalore, India. Since middle school, I&apos;ve dreamed about moving to the United States to complete my education and begin my career. 
           Since moving here and pursuing that dream, I&apos;ve had the amazing opportunity to not only study my passion, but also to be a part of software engineering internships, various part-time jobs with one that has stuck with me for over 3 years, and be around an inspiring group of people. 
-        </div>
+          </p>
         <ContactLinks />
+        </div>
       </div>
       <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit">
         <Image 

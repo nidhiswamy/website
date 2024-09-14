@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={karla.className}>
         <NavBar />
-        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8 pt-16 sm:pt-0 sm:p-20">
+        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8 pt-20 sm:pt-0 sm:p-20 md:pt-24">
           { children }
           <Analytics />
         </div>

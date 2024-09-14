@@ -9,12 +9,12 @@ interface ItemType {
 
 export function Back() {
   return (
-    <div className="justify-left w-fit">
+    <div className="justify-left w-min">
       <Link 
         href="/blog"
-        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light duration-300 p-2"
+        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light hover:rounded duration-300 p-2"
       >
-        ← Back
+        ←
       </Link>
     </div>
   );
@@ -22,7 +22,7 @@ export function Back() {
 
 export function Title({ text }: {text: string}) {
   return (
-    <div className="text-3xl sm:text-5xl mt-10 mb-4">
+    <div className="text-2xl sm:text-5xl text-center mt-4 sm:mt-10 mb-4">
       {text}
     </div>
   );
@@ -112,7 +112,7 @@ export function List({ children }: { children: React.ReactNode[] }) {
 
 export function Code({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-gray/[0.5] text-primary/[0.9] p-2 font-mono w-fit rounded-sm">
+    <div className="bg-gray text-primary/[0.9] p-2 font-mono w-fit rounded-sm">
       <pre className="whitespace-pre-wrap break-words">
         <code className="text-sm">{children}</code>
       </pre>
@@ -146,7 +146,7 @@ export function LinkText({ href, children }: { href: string, children: React.Rea
 
 export function Copyright() {
   return (
-    <div className="w-fit h-fit text-right mt-auto">
+    <div className="text-sm sm:text-lg w-fit h-fit text-right mt-auto">
       © 2024. Nidhi Swamy. All rights reserved.
     </div>
   );
@@ -168,7 +168,7 @@ export function Image(props: {src: string, alt: string}) {
 
 const BlogLayout = ({ title, desc, children }: {title: string, desc: string, children: React.ReactNode}) => {
   return (
-    <div className="flex flex-col w-full sm:w-3/4 min-h-screen max-h-full">
+    <div className="flex flex-col w-full min-h-screen max-h-full">
       <header className="text-center items-center">
         <Title text={title}/>
         <Description children={desc}/>

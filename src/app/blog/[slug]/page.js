@@ -38,15 +38,15 @@ export default function BlogPage(props) {
   const post = getBlogContent(slug);
 
   return (
-    <div className="flex flex-col items-center justify-center p-8">
-      <header className="flex justify-items-start w-full">
+    <div className="flex flex-col items-center justify-center p-0 pt-16 sm:p-8">
+      <header className="flex sm:justify-items-start w-full">
         <Back />
       </header>
       <Title text={post.data.title} />
       <Markdown options={markdownOptions}>{post.content}</Markdown>
-      <footer className="flex flex-row w-full mt-auto justify-between">
-        <div className="w-fit">
-          <p className="mt-10 w-fit">Contact Me</p>
+      <footer className="flex flex-row w-full mt-4 justify-between gap-2">
+        <div className="w-fit flex flex-col gap-1">
+          <p className="w-fit text-sm sm:text-lg">Contact Me</p>
           <ContactLinks />
         </div>
         <Copyright />
