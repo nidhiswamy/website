@@ -14,9 +14,8 @@ export default function WorkCard(props: WorkCardProps) {
         <Link 
           href={`${props.link}`}
           target="_blank"
-          className="w-72 sm:w-full h-full"
         >
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-72 sm:w-full h-full">
             <div className="text-[22px] lg:text-xl xl:text-2xl font-bold text-center">
             {props.title}
           </div>

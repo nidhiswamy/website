@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={karla.className}>
-        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8">
-          <NavBar />
+        <NavBar />
+        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8 pt-16 sm:pt-0 sm:p-20">
           { children }
           <Analytics />
         </div>

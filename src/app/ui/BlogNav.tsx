@@ -4,7 +4,6 @@ import getPostMetadata from '@/utils/getPostMetadata';
 
 export default function BlogNav() {
   const blogs = getPostMetadata('blogs');
-  console.log('blogs: ', blogs);
   const links = blogs.map(blog => (
     <li key={blog.slug}>
       <Link 

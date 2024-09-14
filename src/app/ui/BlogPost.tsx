@@ -15,9 +15,9 @@ export default function BlogPost(props: BlogProps) {
   return (
       <Link 
         href={`/blog/${props.slug}`}
-        className={`${props.visibility} h-min sm:h-full w-full transition-none sm:transition sm:hover:bg-opacity-40 sm:hover:bg-secondary-light sm:hover:shadow-xl duration-300 ease-in-out`}
+        className={`${props.visibility} h-min sm:h-full w-72 sm:w-full transition-none sm:transition sm:hover:bg-opacity-40 sm:hover:bg-secondary-light sm:hover:shadow-xl duration-300 ease-in-out`}
       >
-          <div className="border rounded-md border-slate-600 px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full">
+          <div className="border rounded-md border-slate-600 px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full w-full">
             <h1 className="text-xl font-extrabold md:text-2xl lg:text-3xl w-fit sm:w-10/12 sm:no-underline px-1.5 sm:px-0 py-1 sm:py-0 rounded sm:rounded-none sm:bg-none">
               {props.title}
             </h1>

@@ -1,13 +1,13 @@
-import WorkCard from '@/app/ui/workcard';
-import ProjectCard from '@/app/ui/projectcard';
+import WorkCard from '@/app/ui/WorkCard';
+import ProjectCard from '@/app/ui/ProjectCard';
 import { jobs } from '@/app/experience/jobs';
 import { projects } from '@/app/experience/projects';
 
 export default function Experience() {
   return (
     <>
-      <div className="relative container content-center justify-items-center mx-auto my-4">
-        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit rounded-sm px-2 text-primary-dark font-bold text-4xl my-4 mx-auto">Work</div>
+      <div className="container content-center justify-items-center mx-auto p-8">
+        <div className="bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 text-primary-dark font-bold text-4xl my-4 mx-auto">Work</div>
         <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {jobs.map((job, idx) => {
             return (
