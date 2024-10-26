@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import ContactLinks from '@/app/ui/contactlinks';
+import { default as NextImage } from 'next/image';
 import { karla, inter } from '@/app/fonts';
+
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 interface ItemType {
   title?: string;
@@ -10,12 +13,12 @@ interface ItemType {
 
 export function Back() {
   return (
-    <div className="justify-left w-fit">
+    <div className="justify-left w-min">
       <Link 
         href="/blog"
-        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light duration-300 p-2"
+        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light hover:rounded duration-300 p-2"
       >
-        ← Back
+        ←
       </Link>
     </div>
   );
@@ -23,35 +26,59 @@ export function Back() {
 
 export function Title({ text }: {text: string}) {
   return (
-    <div className="text-3xl sm:text-5xl mt-10 mb-4">
+    <div className="text-2xl sm:text-5xl text-center mt-4 sm:mt-10 mb-4">
       {text}
     </div>
   );
 }
 
-export function Description({ text }: {text: string}) {
+export function Description({ children }: {children: React.ReactNode}) {
   return (
     <div className="flex flex-row items-center justify-center">
       <div className="h-18 lg:h-8 xl:h-10 w-0 sm:w-1 bg-secondary mr-2"></div>
       <div className="text-center sm:text-left text-sm sm:text-md lg:text-lg italic">
-        {text}
+        {children}
       </div>
     </div>
   );
 }
 
-export function Header1({ text }: {text: string}) {
+export function Header1({ children }: {children: React.ReactNode}) {
   return (
     <div className={ `${karla.className} text-2xl font-bold sm:text-4xl mt-8 mb-4` }>
-      {text}
+      {children}
     </div>
   );
 }
 
-export function Header2({ text }: {text: string}) {
+export function Header2({ children }: {children: React.ReactNode}) {
   return (
     <div className="text-2xl font-semibold mb-2 mt-4">
-      {text}
+      {children}
+    </div>
+  );
+}
+
+export function Header3({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
+    </div>
+  );
+}
+
+export function Header4({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
+    </div>
+  );
+}
+
+export function Header5({ children }: {children: React.ReactNode}) {
+  return (
+    <div className="text-xl font-semibold mb-2 mt-4">
+      {children}
     </div>
   );
 }
@@ -64,78 +91,98 @@ export function Body({ children }: {children: React.ReactNode}) {
   );
 }
 
-export function BoldText({ text }: {text: string}) {
+export function BoldText({ children }: {children: React.ReactNode}) {
   return (
-    <div className="font-bold">
-      {text}
+    <div className="inline font-black text-md sm:text-xl">
+      {children}
     </div>
   );
 }
 
-export function List({ items }: { items: ItemType[] }) {
+export function List({ children }: { children: React.ReactNode[] }) {
   return (
-    <ol className="list-decimal list-inside my-1">
-      {items.map((item: ItemType, index: number) => (
+    <ol key="list" className="list-decimal list-inside my-1">
+      {children.map((child: any, index: number) => (
         <li 
           key={index}
-          className="my-2"
+          className="my-2 text-md sm:text-xl"
         >
-          {item.title && <div className="font-extrabold inline">{item.title}: </div>}
-          {item.desc}
+          {child.props.children}
         </li>
       ))}
     </ol>
   );
 }
 
-export function Code({ text }: { text: string }) {
+export function Code({ className = '', children }: { className?: string, children: React.ReactNode }) {
+  const language = className.replace('lang-', '');
+  const codeString = React.Children.map(children, (child) => child?.toString())!.join('\n');
+
   return (
-    <div className="relative bg-[#505050] text-primary/[0.8] p-4 font-mono">
-      <pre className="whitespace-pre-wrap break-words">
-        <code>{text}</code>
-      </pre>
+    <SyntaxHighlighter language={language} style={tomorrow}>
+      {codeString}
+    </SyntaxHighlighter>
+  );
+}
+
+export function Caption({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center justify-center pb-2">
+      <div className="bg-tiffany-blue text-primary/[0.9] p-2 font-mono w-fit rounded-md">
+        <pre className="whitespace-pre-wrap break-words">
+          <code className="text-sm">{children}</code>
+        </pre>
+      </div>
     </div>
   );
 }
 
-export function LinkText({ text, href }: {text: string, href: string}) {
+export function LinkText({ href, children }: { href: string, children: React.ReactNode }) {
   return (
-    <Link
+    <a 
+      target="_blank"
       href={href}
-      target='_blank'
-      className="hover:text-secondary duration-300"
+      className="text-secondary hover:bg-tiffany-blue/[0.3] hover:cursor-pointer p-1"
     >
-      {text}
-    </Link>
+      {children}
+    </a>
   );
 }
 
 export function Copyright() {
   return (
-    <div className="w-fit h-fit text-right mt-auto">
+    <div className="text-sm sm:text-lg w-fit h-fit text-right mt-auto">
       © 2024. Nidhi Swamy. All rights reserved.
     </div>
   );
 } 
 
+export function Image(props: {src: string, alt: string}) {
+  return (
+    <div className="flex items-center justify-center w-full">
+      <NextImage
+        src={props.src}
+        alt={props.alt}
+        width={500}
+        height={500}
+        className="p-4 object-contain rounded-md max-w-auto w-1/2"
+      />
+    </div>
+  );
+}
+
 const BlogLayout = ({ title, desc, children }: {title: string, desc: string, children: React.ReactNode}) => {
   return (
-    <div className="flex flex-col w-full sm:w-3/4 min-h-screen max-h-full">
+    <div className="flex flex-col w-full min-h-screen max-h-full">
       <header className="text-center items-center">
-        <Back />
         <Title text={title}/>
-        <Description text={desc}/>
+        <Description>
+          {desc}
+        </Description>  
       </header>
       <main className={`${inter.className} leading-relaxed tracking-wide`}>
         {children}
       </main>
-      <footer className="flex flex-row mt-auto justify-between">
-        <div className="w-fit">
-          <p className="mt-10 w-fit">Contact Me</p>
-          <ContactLinks />
-        </div>
-        <Copyright />
-      </footer>
     </div>
   );
 }

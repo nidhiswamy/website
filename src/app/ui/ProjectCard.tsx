@@ -25,7 +25,7 @@ export default function ProjectCard(props: ProjCardProps) {
                 width="35"
                 className="object-contain filter brightness-0"
               />
-              <div className="text-[22px] lg:text-xl xl:text-2xl font-bold">
+              <div className="flex items-center pr-2 text-[22px] lg:text-xl xl:text-2xl font-bold">
                 {props.name}
               </div>
             </Link>

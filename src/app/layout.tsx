@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { karla } from './fonts';
 import './globals.css';
-import NavBar from '@/app/ui/navbar';
+import NavBar from '@/app/ui/NavBar';
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={karla.className}>
-        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8">
-          <NavBar />
+        <NavBar />
+        <div className="selection:bg-secondary-light/[0.3] text-primary-dark h-full min-h-screen bg-primary flex flex-col items-center justify-center p-8 pt-20 sm:pt-0 sm:p-20 md:pt-24">
           { children }
           <Analytics />
         </div>

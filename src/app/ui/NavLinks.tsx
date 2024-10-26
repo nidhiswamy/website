@@ -14,7 +14,7 @@ const links = [
 export default function NavLinks() {
   const pathname = usePathname();
   return (
-    <div className="inset-x-0 top-4 justify-items-center flex gap-6 pb-8 pt-4">
+    <div className="flex items-center justify-center gap-6">
       {links.map((link) => {
         return (
           <Link 
