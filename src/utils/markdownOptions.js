@@ -14,7 +14,7 @@ import {
   Image
 } from '@/app/ui/BlogLayout';
 
-export default {
+const markdownOptions = {
   overrides: {
     h1: {
       component: Header1,
@@ -60,3 +60,5 @@ export default {
     }
   }
 };
+
+export default markdownOptions;

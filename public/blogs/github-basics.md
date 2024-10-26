@@ -26,6 +26,7 @@ Download and install Git from [git-scm.com](http://git-scm.com)
 ## Configuration
 1. Open up a terminal on your local machine
 2. Run the following commands one by one and set your name and email address:
+
 ```bash
 git config --global user.name "your username"
 git config --global user.email "yourname@email.com"
@@ -36,12 +37,14 @@ The basic commands for running and managing Git are highlighted below. Git has o
 
 ## 1. Initializing a Repository
 This command initializes a _local_ repository in the current local directory of your machine
+
 ```bash
 git init
 ```
 
 ## 2. Status
 This command checks the status of the current git repository which includes unstaged commits, changes, and unpushed references.
+
 ```bash
 git status
 ```
@@ -49,40 +52,47 @@ git status
 ## 3. Changes
 
 ### Adding Changes
-```csharp
+
+```bash
 git add . // adds all changed files
 git add file1.ext file2.ext // adds all specified files
 ```
 
 ### Committing Changes
-```csharp
+
+```bash
 git commit -m "your commit message" // commits the added files 
 ```
 
 ### Pushing Changes
-```csharp
+
+```bash
 git push origin <branch-name> // pushes changes to the given branch
 ```
 
 ## 4. Viewing Commit History
 Use this command to view the history of all commits
-```csharp
+
+```bash
 git log
 ```
 
 ## 5. Branches
 
 ### Create Branch
-```csharp
+
+```bash
 git branch <branch-name>
 ```
 
 ### Switch to a Branch
-```csharp
+
+```bash
 git checkout <branch-name>
 ```
 ## 6. Merging
-```csharp
+
+```bash
 git merge <branch-name>
 ```
 # Resources

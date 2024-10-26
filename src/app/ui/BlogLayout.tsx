@@ -1,6 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { default as NextImage } from 'next/image';
 import { karla, inter } from '@/app/fonts';
+
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 interface ItemType {
   title?: string;
@@ -89,7 +93,7 @@ export function Body({ children }: {children: React.ReactNode}) {
 
 export function BoldText({ children }: {children: React.ReactNode}) {
   return (
-    <div className="font-bold">
+    <div className="inline font-black text-md sm:text-xl">
       {children}
     </div>
   );
@@ -101,7 +105,7 @@ export function List({ children }: { children: React.ReactNode[] }) {
       {children.map((child: any, index: number) => (
         <li 
           key={index}
-          className="my-2"
+          className="my-2 text-md sm:text-xl"
         >
           {child.props.children}
         </li>
@@ -110,13 +114,14 @@ export function List({ children }: { children: React.ReactNode[] }) {
   );
 }
 
-export function Code({ children }: { children: React.ReactNode }) {
+export function Code({ className = '', children }: { className?: string, children: React.ReactNode }) {
+  const language = className.replace('lang-', '');
+  const codeString = React.Children.map(children, (child) => child?.toString())!.join('\n');
+
   return (
-    <div className="bg-gray text-primary/[0.9] p-2 font-mono w-fit rounded-sm">
-      <pre className="whitespace-pre-wrap break-words">
-        <code className="text-sm">{children}</code>
-      </pre>
-    </div>
+    <SyntaxHighlighter language={language} style={tomorrow}>
+      {codeString}
+    </SyntaxHighlighter>
   );
 }
 
@@ -137,7 +142,7 @@ export function LinkText({ href, children }: { href: string, children: React.Rea
     <a 
       target="_blank"
       href={href}
-      className="text-secondary hover:bg-tiffany-blue/[0.3] hover:cursor-pointer"
+      className="text-secondary hover:bg-tiffany-blue/[0.3] hover:cursor-pointer p-1"
     >
       {children}
     </a>
@@ -154,12 +159,12 @@ export function Copyright() {
 
 export function Image(props: {src: string, alt: string}) {
   return (
-    <div className="flex items-center justify-center max-w-full">
-      <img
+    <div className="flex items-center justify-center w-full">
+      <NextImage
         src={props.src}
         alt={props.alt}
-        width={300}
-        height={300}
+        width={500}
+        height={500}
         className="p-4 object-contain rounded-md max-w-auto w-1/2"
       />
     </div>
@@ -171,7 +176,9 @@ const BlogLayout = ({ title, desc, children }: {title: string, desc: string, chi
     <div className="flex flex-col w-full min-h-screen max-h-full">
       <header className="text-center items-center">
         <Title text={title}/>
-        <Description children={desc}/>
+        <Description>
+          {desc}
+        </Description>  
       </header>
       <main className={`${inter.className} leading-relaxed tracking-wide`}>
         {children}

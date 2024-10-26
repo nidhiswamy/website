@@ -11,7 +11,6 @@ description: "A high-level description of the Software Development Life Cycle (S
 In the constantly evolving realm of technology, where software applications have become integral to our daily lives, the process by which these come into existence is of extreme importance. The Software Development Life Cycle (SDLC) is a process that enables software developers, engineers, or programmers to perform structured and efficient software development on a particular program or project.
 
 ![Fig. 1](/blogs/fig1.png)
-`Figure 1: The Software Development Life Cycle`
 
 Most young software developers begin projects without breaking down the various complex stages that are involved in the process. So, I seek to demystify this software development process, by breaking it down into its core components and explaining it in a way that is accessible to both experienced developers and new software programmers. The six fundamental stages of the SDLC are explored below.
 
@@ -44,7 +43,6 @@ Testing comprises of three major tiers:
 3. **End-to-end tests**: These are the most expensive to maintain, with the slowest operating pace. It is also the most time-consuming phase and has unreliable external dependencies.
 
 ![Fig. 2](/blogs/fig2.png)
-`Figure 2: Tiers of Software Testing`
 
 Testing is essential for identifying and resolving issues early in the development process. It helps ensure that the software is stable, secure, and reliable, reducing the likelihood of defects and issues in the production environment. The integration phase is critical for ensuring that all parts of the software interact as intended. It helps identify and resolve issues related to component compatibility, data exchange, and third-party integration, ensuring a seamless and functional software solution.
 

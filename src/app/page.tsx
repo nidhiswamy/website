@@ -23,7 +23,7 @@ import { solway } from '@/app/fonts';
 export default function About() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-12 mx-3 lg:gap-x-10 lg:justify-between lg:items-center sm:size-3/4 md:size-10/12 2xl:size-5/6 mt-16 lg:mt-24">
-      <div className={`h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
+      <div className="h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-primary-dark text-lg md:place-self-start md:text-xl 2xl:text-2xl">
         <h1 className={`${solway.className} text-3xl pb-8`}>Hey there!
           I’m <span className="text-secondary">Nidhi Swamy</span>,<br/>a Software Engineer.</h1>
         <div className="flex flex-col gap-4">
