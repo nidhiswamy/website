@@ -36,14 +36,14 @@ export default function About() {
       </div>
       <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit">
         <Image 
-          src="/fave.jpg" 
-          alt="Bachelor's degree graduation."
-          height={500}
-          width={500}
+          src="/forest.jpg" 
+          alt="Denver, Colorado"
+          height={1920}
+          width={1281}
           className="shadow-lg"
         />
         <div className="font-sans text-gray p-2 italic text-sm text-center">
-          Bachelor&apos;s Degree Graduation.
+          Denver, Colorado
         </div>
       </div>
       <div className={`h-fit order-4 lg:order-4 place-self-center w-auto text-primary-dark text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}>
