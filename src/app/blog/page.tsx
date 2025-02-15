@@ -4,11 +4,11 @@ import BlogPageHeader from "../ui/BlogPageHeader";
 
 
 function Blog() {
-  const blogs = getPostMetadata('public/blogs');
+  const blogs = getPostMetadata("public/blogs");
   return (
-    <div className="flex flex-col items-center justify-center pt-0 sm:pt-16 lg:pt-0">
+    <div className="flex flex-col items-center justify-center pt-16 md:pt-4">
       <BlogPageHeader />
-      <div className="sm:mt-10 grid-none flex flex-col gap-4 sm:grid sm:grid-cols-3 sm:grid-rows-3 place-items-start sm:place-items-center sm:gap-8">
+      <div className="sm:mt-10 grid-none flex flex-col gap-4 sm:grid sm:grid-cols-3 place-items-start sm:place-items-center sm:gap-8">
         {blogs.map((blog, index) => {
           return (
             <BlogPost
@@ -19,11 +19,11 @@ function Blog() {
               date={blog.frontmatter.date}
               readtime={blog.frontmatter.readtime}
             />
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

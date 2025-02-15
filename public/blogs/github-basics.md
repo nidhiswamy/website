@@ -40,61 +40,57 @@ This command initializes a _local_ repository in the current local directory of 
 
 ```bash
 git init
-```
+``` 
 
 ## 2. Status
 This command checks the status of the current git repository which includes unstaged commits, changes, and unpushed references.
 
 ```bash
 git status
-```
+``` 
 
 ## 3. Changes
 
 ### Adding Changes
-
 ```bash
 git add . // adds all changed files
 git add file1.ext file2.ext // adds all specified files
-```
+``` 
 
 ### Committing Changes
-
 ```bash
 git commit -m "your commit message" // commits the added files 
-```
+``` 
 
 ### Pushing Changes
-
 ```bash
 git push origin <branch-name> // pushes changes to the given branch
-```
+``` 
 
 ## 4. Viewing Commit History
 Use this command to view the history of all commits
 
 ```bash
 git log
-```
+``` 
 
 ## 5. Branches
 
 ### Create Branch
-
 ```bash
 git branch <branch-name>
-```
+``` 
 
 ### Switch to a Branch
-
 ```bash
 git checkout <branch-name>
 ```
-## 6. Merging
+
+## 6. Merging 
 
 ```bash
 git merge <branch-name>
-```
+``` 
 # Resources
 Like mentioned above, this is a quick run-down of the basics of Git and GitHub. If you would like to know more about the various resources, check these links out!
 
