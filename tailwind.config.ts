@@ -29,8 +29,8 @@ const config: Config = {
       'tiffany-blue': '#94BFBE',
       'primary': '#F0FAF4',
       'dark-primary': '#66CCBD',
-      'primary-dark': '#000000',
-      'primary-light': '#9b6a6c',
+      'primary-dark': '#2c2c2c',
+      'primary-light': '#DAE2DF',
       'primary-extra-light': '#D2B2B3',
       'accent': '#C58C83'
     },

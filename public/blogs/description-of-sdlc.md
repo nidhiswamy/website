@@ -2,7 +2,7 @@
 title: "The Software Development Life Cycle"
 date: "1st April, 2024"
 readtime: "10"
-description: "A high-level description of the Software Development Life Cycle (SDLC) and its relevance to this website"
+description: "A high-level description of the Software Development Life Cycle (SDLC)"
 ---
 
 > A high-level description of the Software Development Life Cycle (SDLC) and its relevance to this website
