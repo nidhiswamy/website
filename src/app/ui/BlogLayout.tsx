@@ -13,10 +13,10 @@ interface ItemType {
 
 export function Back() {
   return (
-    <div className="justify-left w-min">
+    <div className="justify-left w-min pt-4">
       <Link 
         href="/blog"
-        className="text-2xl transition hover:bg-opacity-40 hover:bg-secondary-light hover:rounded duration-300 p-2"
+        className="text-3xl transition hover:font-bold hover:text-secondary p-1"
       >
         ←
       </Link>
@@ -26,7 +26,7 @@ export function Back() {
 
 export function Title({ text }: {text: string}) {
   return (
-    <div className="text-2xl sm:text-5xl text-center mt-4 sm:mt-10 mb-4">
+    <div className="text-2xl sm:text-5xl text-center mt-10 md:mt-4 mb-4">
       {text}
     </div>
   );
@@ -114,14 +114,24 @@ export function List({ children }: { children: React.ReactNode[] }) {
   );
 }
 
-export function Code({ className = '', children }: { className?: string, children: React.ReactNode }) {
-  const language = className.replace('lang-', '');
-  const codeString = React.Children.map(children, (child) => child?.toString())!.join('\n');
+export function Code({
+  className = "",
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) {
+  const language = className.replace("lang-", "");
+  const codeString = React.Children.map(children, (child) =>
+    child?.toString()
+  )!.join("\n");
 
   return (
-    <SyntaxHighlighter language={language} style={tomorrow}>
-      {codeString}
-    </SyntaxHighlighter>
+    <div className="w-[350px] sm:w-full">
+      <SyntaxHighlighter language={language} style={tomorrow}>
+        {codeString}
+      </SyntaxHighlighter>
+    </div>
   );
 }
 
@@ -129,7 +139,7 @@ export function Caption({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center justify-center pb-2">
       <div className="bg-tiffany-blue text-primary/[0.9] p-2 font-mono w-fit rounded-md">
-        <pre className="whitespace-pre-wrap break-words">
+        <pre className="whitespace-pre-wrap break-words xs:w-[350px] w-full">
           <code className="text-sm">{children}</code>
         </pre>
       </div>
@@ -137,9 +147,15 @@ export function Caption({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function LinkText({ href, children }: { href: string, children: React.ReactNode }) {
+export function LinkText({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
-    <a 
+    <a
       target="_blank"
       href={href}
       className="text-secondary hover:bg-tiffany-blue/[0.3] hover:cursor-pointer p-1"
@@ -155,9 +171,9 @@ export function Copyright() {
       © 2024. Nidhi Swamy. All rights reserved.
     </div>
   );
-} 
+}
 
-export function Image(props: {src: string, alt: string}) {
+export function Image(props: { src: string; alt: string }) {
   return (
     <div className="flex items-center justify-center w-full">
       <NextImage
@@ -171,20 +187,26 @@ export function Image(props: {src: string, alt: string}) {
   );
 }
 
-const BlogLayout = ({ title, desc, children }: {title: string, desc: string, children: React.ReactNode}) => {
+const BlogLayout = ({
+  title,
+  desc,
+  children,
+}: {
+  title: string;
+  desc: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div className="flex flex-col w-full min-h-screen max-h-full">
       <header className="text-center items-center">
-        <Title text={title}/>
-        <Description>
-          {desc}
-        </Description>  
+        <Title text={title} />
+        <Description>{desc}</Description>
       </header>
       <main className={`${inter.className} leading-relaxed tracking-wide`}>
         {children}
       </main>
     </div>
   );
-}
+};
 
 export default BlogLayout;

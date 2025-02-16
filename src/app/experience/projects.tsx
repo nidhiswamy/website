@@ -22,7 +22,7 @@ export const projects = [
   },
   { 
     id: 4,
-    name: 'OPT Search Web Scraper',
+    name: 'OPT Web Scraper',
     link: 'https://www.github.com/nidhiswamy/opt-search',
     desc: 'A web scraper built to scrape the OPTJobs website for specific job positions',
     skills: 'Python',
@@ -32,7 +32,7 @@ export const projects = [
     name: 'Personal Site',
     link: 'https://github.com/nidhiswamy/website',
     desc: 'This website, built to showcase my skills and experience, along with a blog section where I share my interests',
-    skills: 'Figma, JavaScript, NextJS, TailwindCSS, Vercel',
+    skills: 'Figma, NextJS, TailwindCSS, Vercel',
   },
   { 
     id: 6,

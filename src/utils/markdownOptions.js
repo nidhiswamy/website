@@ -1,4 +1,4 @@
-import { 
+import {
   Header1,
   Header2,
   Header3,
@@ -11,8 +11,8 @@ import {
   Code,
   LinkText,
   Copyright,
-  Image
-} from '@/app/ui/BlogLayout';
+  Image,
+} from "@/app/ui/BlogLayout";
 
 const markdownOptions = {
   overrides: {
@@ -32,7 +32,7 @@ const markdownOptions = {
       component: Header5,
     },
     strong: {
-      component: BoldText
+      component: BoldText,
     },
     blockquote: {
       component: Description,
@@ -41,24 +41,24 @@ const markdownOptions = {
       component: Body,
     },
     ol: {
-      component: List
+      component: List,
     },
     ul: {
-      component: List
+      component: List,
     },
     code: {
-      component: Code
+      component: Code,
     },
     a: {
-      component: LinkText
+      component: LinkText,
     },
     hr: {
-      component: Copyright
+      component: Copyright,
     },
     img: {
-      component: Image
-    }
-  }
+      component: Image,
+    },
+  },
 };
 
 export default markdownOptions;
