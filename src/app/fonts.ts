@@ -1,24 +1,24 @@
-import { Alegreya, Solway, Karla, Inter } from 'next/font/google';
+import { Alegreya, Solway, Karla, Inter } from "next/font/google";
 
 export const alegreya = Alegreya({
-  subsets: ['latin'],
-})
+  subsets: ["latin"],
+});
 
 export const solway = Solway({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const karla = Karla({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-karla',
-})
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-karla",
+});
 
 export const inter = Inter({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
