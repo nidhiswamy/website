@@ -60,8 +60,7 @@ export default function About() {
         journaling.
         <br />
         <br />
-        This picture is from SOC 119, a class I&apos;ve been involved with since
-        my freshman year that is taken by 800+ students every semester. For
+        I have been hugely involved in SOC 119, a class that is taken by 800+ students every semester. For
         someone who experienced intense social and public speaking anxiety, I am
         grateful to have found this class that has transformed me into someone
         who is capable of conversing with such a huge group of students and the
