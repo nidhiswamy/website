@@ -15,7 +15,7 @@
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.5.0",
     "mongodb": "^3.5.9",
-    "next": "14.0.4",
+    "next": "14.2.24",
     "prism-react-renderer": "^2.4.0",
     "prismjs": "^1.29.0",
     "react": "^18",
