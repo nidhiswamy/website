@@ -5,7 +5,7 @@ import { solway } from "@/app/fonts";
 export default function About() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0.5 gap-y-8 sm:gap-y-12 mx-3 lg:gap-x-10 lg:justify-between lg:items-center sm:size-3/4 md:size-10/12 2xl:size-5/6 mt-16 sm:mt-8">
-      <div className="h-fit order-2 lg:order-1 place-self-center w-fit lg:w-full text-lg md:place-self-start md:text-xl 2xl:text-2xl">
+      <div className="h-fit order-2 lg:order-1 place-self-start w-fit lg:w-full text-lg md:place-self-start md:text-xl 2xl:text-2xl">
         <h1 className={`${solway.className} text-3xl pb-8`}>
           Hey there! I’m{" "}
           <span className="text-secondary dark:text-dark-primary">
@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit shadow-2xl">
+      <div className="order-1 lg:order-2 place-self-start lg:place-self-start xl:size-fit shadow-2xl">
         <Image
           src="/assets/professional.jpg"
           alt="Professional head-shot"
@@ -36,7 +36,7 @@ export default function About() {
         />
       </div>
       <div
-        className={`h-fit order-4 lg:order-4 place-self-center w-auto text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}
+        className={`h-fit order-4 lg:order-4 place-self-start w-auto text-lg xl:place-self-start md:text-xl 2xl:text-2xl`}
       >
         Outside of work, I spend a lot of time outdoors with activities that
         keep me grounded, including running, hiking, camping, and skiing
@@ -44,7 +44,7 @@ export default function About() {
         read and journal regularly as a way to reflect, learn, and stay mentally
         sharp.
       </div>
-      <div className="order-3 lg:order-3 place-self-center lg:place-self-start xl:size-fit shadow-2xl">
+      <div className="order-3 lg:order-3 place-self-start lg:place-self-start xl:size-fit shadow-2xl">
         <Image
           src="/assets/forest.jpg"
           alt="Denver, Colorado"
