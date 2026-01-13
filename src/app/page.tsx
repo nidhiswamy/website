@@ -29,7 +29,7 @@ export default function About() {
 
       <div className="order-1 lg:order-2 place-self-center lg:place-self-start xl:size-fit shadow-2xl">
         <Image
-          src="/professional.jpg"
+          src="/assets/professional.jpg"
           alt="Professional head-shot"
           height={1920}
           width={1281}
@@ -46,7 +46,7 @@ export default function About() {
       </div>
       <div className="order-3 lg:order-3 place-self-center lg:place-self-start xl:size-fit shadow-2xl">
         <Image
-          src="/forest.jpg"
+          src="/assets/forest.jpg"
           alt="Denver, Colorado"
           height={1920}
           width={1281}

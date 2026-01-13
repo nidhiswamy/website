@@ -38,8 +38,10 @@ export default function BlogPage(props) {
     <div className="flex flex-col items-center justify-center p-0 pt-16 sm:p-8">
       <StickyBlogHeader title={post.data.title} />
       <Title text={post.data.title} />
-      <Markdown options={markdownOptions}>{post.content}</Markdown>
-      <footer className="flex flex-row w-full mt-4 justify-between gap-2">
+      <div className="p-0 sm:p-4">
+        <Markdown options={markdownOptions}>{post.content}</Markdown>
+      </div>
+      <footer className="flex flex-row w-full mt-4 justify-between gap-2 flex-wrap">
         <div className="w-fit flex flex-col gap-1">
           <p className="w-fit text-sm sm:text-lg">Contact Me</p>
           <ContactLinks />
