@@ -1,24 +1,6 @@
-// export default function Home() {
-//   return (
-//     <div className="flex mx-auto p-8 left-12 top-40 absolute">
-//       <div className="ml-12 w-96 h-32">
-//         <div className="mb-8 text-2xl font-normal">
-//           Hi, I’m Nidhi!
-//         </div>
-//         <div className="mb-4 text-2xl font-normal">
-//           Welcome to my cove of thoughts on the Internet, I hope you enjoy :)
-//         </div>
-//         <ContactLinks />
-//       </div>
-//     </div>
-//   );
-//      'primary': '#667a73',
-//      Find out more about my professional work experience and personal projects <Link href="/experience" className="text-secondary hover:underline">here</Link>!
-// }
-
-import ContactLinks from '@/app/ui/ContactLinks';
-import Image from 'next/image';
-import { solway } from '@/app/fonts';
+import ContactLinks from "@/app/ui/ContactLinks";
+import Image from "next/image";
+import { solway } from "@/app/fonts";
 
 export default function About() {
   return (

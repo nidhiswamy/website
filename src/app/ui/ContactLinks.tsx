@@ -29,7 +29,7 @@ function ContactIcon(props: {name: string, filename: string, href: string}) {
         <Link href={ props.href } target="_blank">
           <div className="relative overflow-hidden w-8 h-8 transition-transform transform hover:scale-110">
             <Image
-              src={ `/${props.filename}.svg` }
+              src={ `assets/${props.filename}.svg` }
               alt={ `${props.name} Icon` }
               height="35"
               width="35"

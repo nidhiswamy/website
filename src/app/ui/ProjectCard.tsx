@@ -19,7 +19,7 @@ export default function ProjectCard(props: ProjCardProps) {
           className="flex flex-row gap-x-1"
         >
           <Image
-            src="github.svg"
+            src="assets/github.svg"
             alt="GitHub Icon"
             height="35"
             width="35"
