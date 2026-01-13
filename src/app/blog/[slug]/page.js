@@ -41,7 +41,7 @@ export default function BlogPage(props) {
       <div className="p-0 sm:p-4">
         <Markdown options={markdownOptions}>{post.content}</Markdown>
       </div>
-      <footer className="flex flex-row w-full mt-4 justify-between gap-2 flex-wrap">
+      <footer className="flex flex-row w-full mt-4 justify-between gap-2 flex-wrap p-0 sm:p-4">
         <div className="w-fit flex flex-col gap-1">
           <p className="w-fit text-sm sm:text-lg">Contact Me</p>
           <ContactLinks />

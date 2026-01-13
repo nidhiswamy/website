@@ -168,7 +168,7 @@ export function LinkText({
 export function Copyright() {
   return (
     <div className="text-sm sm:text-lg w-fit h-fit text-right mt-auto">
-      © 2024. Nidhi Swamy. All rights reserved.
+      © 2026. Nidhi Swamy. All rights reserved.
     </div>
   );
 }
