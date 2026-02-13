@@ -9,7 +9,7 @@ export default function Logo() {
         href="/"
       >
         Nidhi Swamy
-        <div className="flex items-end gap-0.5 text-gray">
+        <div className="flex items-end justify-center md:justify-start gap-0.5 text-gray">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
