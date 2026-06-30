@@ -3,7 +3,7 @@ import ProjectCard from '@/app/ui/ProjectCard';
 import { jobs } from '@/app/experience/jobs';
 import { projects } from '@/app/experience/projects';
 
-const headerStyle = "bg-gradient-to-r from-secondary/[0.9] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl my-4 mx-auto"
+const headerStyle = "bg-gradient-to-r from-secondary/[0.8] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl my-4 mx-auto"
 
 export default function Experience() {
   return (
@@ -15,7 +15,7 @@ export default function Experience() {
             return (
               <div 
                 key={idx} 
-                className="sm:w-full p-4 rounded-md border border-slate-600 shadow hover:bg-secondary-light/[0.4] hover:dark:bg-dark-secondary-light/[0.2] hover:shadow-xl transition duration-300 ease-in-out"
+                className="sm:w-full p-4 rounded-md border border-slate-600 shadow hover:bg-secondary-light/[0.1] hover:shadow-xl transition duration-300 ease-in-out"
               >
                 <WorkCard 
                   company={job.company}

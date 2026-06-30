@@ -15,16 +15,16 @@ export default function BlogPost(props: BlogProps) {
   return (
     <Link
       href={`/blog/${props.slug}`}
-      className="h-full max-h-72 sm:w-72 w-full transition-none sm:transition sm:hover:bg-secondary-light/[0.4] sm:hover:shadow-xl duration-300 ease-in-out"
+      className="h-full max-h-72 w-full transition-none sm:transition sm:hover:bg-secondary-light/[0.1] sm:hover:shadow-xl duration-300 ease-in-out"
     >
-      <div className="border rounded-md border-slate-600 px-4 pt-2 pb-4 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full w-full">
+      <div className="border rounded-md border-primary/15 px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full w-full">
         <h1 className="text-xl font-extrabold md:text-2xl lg:text-3xl w-fit sm:w-10/12 sm:no-underline px-1.5 sm:px-0 py-1 sm:py-0 rounded sm:rounded-none sm:bg-none">
           {props.title}
         </h1>
         <h4 className="text-sm lg:text-sm font-thin sm:text-center italic sm:pt-2 p-1 sm:pb-4 w-fit sm:w-3/4">
           {props.header}
         </h4>
-        <p className="mt-auto text-xs font-thin lg:text-sm text-gray px-1 sm:px-0">
+        <p className="mt-auto text-xs font-thin lg:text-sm text-gray px-1 sm:px-0 pb-1">
           {props.date} • {props.readtime} min. read
         </p>
       </div>

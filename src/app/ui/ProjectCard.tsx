@@ -12,14 +12,14 @@ interface ProjCardProps {
 export default function ProjectCard(props: ProjCardProps) {
   return (
     <div className="flex flex-col w-72 sm:w-full h-full items-center">
-      <div className="mb-2 w-auto hover:bg-secondary-light/[0.4] hover:dark:bg-dark-secondary-light/[0.2] transition duration-300 ease-in-out">
+      <div className="mb-2 w-auto hover:bg-secondary-light/[0.2] transition duration-300 ease-in-out">
         <Link
           href={`${props.link}`}
           target="_blank"
           className="flex flex-row gap-x-1"
         >
           <Image
-            src="github.svg"
+            src="assets/github.svg"
             alt="GitHub Icon"
             height="35"
             width="35"
