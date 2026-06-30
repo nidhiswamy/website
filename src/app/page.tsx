@@ -68,7 +68,7 @@ export default function About() {
       </div>
       <div className="order-3 lg:order-3 place-self-center lg:place-self-start xl:size-fit shadow-2xl">
         <Image
-          src="/forest.jpg"
+          src="/me_co.jpg"
           alt="Denver, Colorado"
           height={1920}
           width={1281}
