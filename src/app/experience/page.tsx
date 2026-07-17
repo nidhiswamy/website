@@ -3,7 +3,7 @@ import ProjectCard from '@/app/ui/ProjectCard';
 import { jobs } from '@/app/experience/jobs';
 import { projects } from '@/app/experience/projects';
 
-const headerStyle = "bg-gradient-to-r from-secondary/[0.8] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl my-4 mx-auto"
+const headerStyle = "bg-gradient-to-r from-secondary/[0.8] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl text-primary my-4 mx-auto"
 
 export default function Experience() {
   return (
