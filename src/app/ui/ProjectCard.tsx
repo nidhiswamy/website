@@ -32,7 +32,7 @@ export default function ProjectCard(props: ProjCardProps) {
       </div>
       <div className="w-3/4 text-center text-lg xl:text-xl">{props.desc}</div>
       <div
-        className={`${solway.className} mt-auto text-center text-gray text-sm lg:text-md xl:text-lg`}
+        className={`${solway.className} pt-2 mt-auto text-center text-gray text-sm lg:text-md xl:text-lg`}
       >
         {props.skills}
       </div>

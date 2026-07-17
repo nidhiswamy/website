@@ -27,7 +27,7 @@ export default function WorkCard(props: WorkCardProps) {
           {props.company}
         </div>
         <div
-          className={`${solway.className} text-center text-gray text-sm lg:text-md xl:text-lg`}
+          className={`${solway.className} px-8 pt-2 text-center text-gray text-sm lg:text-md xl:text-lg`}
         >
           {props.skills}
         </div>

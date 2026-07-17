@@ -1,9 +1,10 @@
-import WorkCard from '@/app/ui/WorkCard';
-import ProjectCard from '@/app/ui/ProjectCard';
-import { jobs } from '@/app/experience/jobs';
-import { projects } from '@/app/experience/projects';
+import WorkCard from "@/app/ui/WorkCard";
+import ProjectCard from "@/app/ui/ProjectCard";
+import { jobs } from "@/app/experience/jobs";
+import { projects } from "@/app/experience/projects";
 
-const headerStyle = "bg-gradient-to-r from-secondary/[0.8] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl text-primary my-4 mx-auto"
+const headerStyle =
+  "bg-gradient-to-r from-secondary/[0.8] to-secondary-light/[0.6] w-fit rounded-sm px-2 py-1 font-bold text-4xl text-primary my-4 mx-auto";
 
 export default function Experience() {
   return (
@@ -13,11 +14,15 @@ export default function Experience() {
         <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {jobs.map((job, idx) => {
             return (
-              <div 
-                key={idx} 
-                className="sm:w-full p-4 rounded-md border border-slate-600 shadow hover:bg-secondary-light/[0.1] hover:shadow-xl transition duration-300 ease-in-out"
+              <div
+                key={idx}
+                className={[
+                  "sm:w-full p-4 shadow",
+                  "border border-primary/15 hover:bg-secondary-light/[0.1]",
+                  "hover:shadow-xl transition duration-300 ease-in-out",
+                ].join(" ")}
               >
-                <WorkCard 
+                <WorkCard
                   company={job.company}
                   link={job.link}
                   title={job.title}
@@ -35,19 +40,22 @@ export default function Experience() {
         <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
             return (
-              <div 
-                key={project.id} 
-                className="p-4 rounded-md border border-slate-600 shadow"
+              <div
+                key={project.id}
+                className={[
+                  "p-4 border border-primary/15 shadow",
+                  "hover:shadow-xl transition duration-300 ease-in-out",
+                ].join(" ")}
               >
-                <ProjectCard 
+                <ProjectCard
                   name={project.name}
                   link={project.link}
-                  desc={project.desc}                 
-                  skills={project.skills}                                
+                  desc={project.desc}
+                  skills={project.skills}
                 />
               </div>
-          );
-        })}
+            );
+          })}
         </div>
       </div>
     </>
