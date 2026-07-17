@@ -2,10 +2,9 @@ export const jobs = [
   {
     company: "Ringy",
     link: "https://www.ringy.com",
-    title: "Full Stack Software Engineer",
+    title: "Full-Stack Software Engineer",
     date: "Aug 2024 - Present",
-    skills:
-      "Currently working as a full-time software engineer at Ringy in Denver, Colorado",
+    skills: "Currently working as a full-time software engineer.",
   },
   {
     company: "Lutron Electronics",
