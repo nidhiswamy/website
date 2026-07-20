@@ -4,6 +4,7 @@ import BlogPageHeader from "../ui/BlogPageHeader";
 
 function Blog() {
   const blogs = getPostMetadata("public/blogs");
+
   return (
     <div className="flex flex-col items-center justify-center pt-16 md:pt-4">
       <BlogPageHeader />

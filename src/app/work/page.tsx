@@ -1,8 +1,8 @@
 import WorkCard from "@/app/ui/WorkCard";
-import { jobs } from "@/app/experience/jobs";
+import { jobs } from "@/app/work/jobs";
 import ExperienceHeader from "../ui/ExperienceHeader";
 
-export default function Experience() {
+export default function Work() {
   return (
     <div className="container content-center justify-items-center mx-auto p-8 md:p-0">
       <ExperienceHeader label="Work" />

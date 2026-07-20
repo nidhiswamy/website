@@ -6,11 +6,9 @@ export default function BlogPageHeader() {
   return (
     <div>
       <h1 className={`${solway.className} text-center text-3xl`}>
-        Welcome to my{" "}
-        <Tooltip content={blogBlurb} position="bottom">
-          <span className="text-secondary dark:text-dark-secondary">blog</span>
+        <Tooltip content={blogBlurb}>
+          <span className="text-secondary dark:text-dark-secondary">Blog</span>
         </Tooltip>
-        !
       </h1>
     </div>
   );
