@@ -8,7 +8,7 @@ export default function BlogPageHeader() {
       <h1 className={`${solway.className} text-center text-3xl`}>
         Welcome to my{" "}
         <Tooltip content={blogBlurb} position="bottom">
-          <span className="text-secondary dark:text-dark-primary">blog</span>
+          <span className="text-secondary dark:text-dark-secondary">blog</span>
         </Tooltip>
         !
       </h1>

@@ -30,6 +30,37 @@ export default function Logo() {
             />
           </svg>
           <p className="font-sans text-xs -mt-1">Denver, Colorado</p>
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 240 60"
+            className="
+            pointer-events-none
+            absolute
+            -bottom-8
+            left-0
+            h-16
+            w-full
+            overflow-visible
+            opacity-0
+            transition-all
+            duration-500
+            ease-out
+            group-hover:-translate-y-1
+            group-hover:opacity-100
+          "
+          >
+            <path
+              d="M0 55 L36 24 L58 43 L94 8 L132 44 L160 20 L200 48 L240 30 L240 60 L0 60 Z"
+              className="fill-teal-400/10 stroke-teal-400/70"
+              strokeWidth="2"
+              strokeLinejoin="round"
+            />
+
+            <path
+              d="M76 28 L94 8 L111 28 L102 24 L94 29 L87 23 Z"
+              className="fill-stone-200/80"
+            />
+          </svg>
         </div>
       </Link>
     </div>

@@ -4,7 +4,7 @@ import ExperienceHeader from "../ui/ExperienceHeader";
 
 export default function Experience() {
   return (
-    <div className="container content-center justify-items-center mx-auto mt-16 p-8 md:p-0">
+    <div className="container content-center justify-items-center mx-auto p-8 md:p-0">
       <ExperienceHeader label="Work" />
       <div className="justify-items-center grid grid-cols-1 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {jobs.map((job, idx) => {
@@ -13,7 +13,8 @@ export default function Experience() {
               key={idx}
               className={[
                 "sm:w-full p-4 shadow",
-                "border border-primary/15 hover:bg-secondary-light/[0.1]",
+                "border border-accent/15 hover:bg-secondary/[0.1]",
+                "dark:border-dark-accent/15 dark:hover:bg-dark-secondary-light/[0.1]",
                 "hover:shadow-xl transition duration-300 ease-in-out",
               ].join(" ")}
             >
