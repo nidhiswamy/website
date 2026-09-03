@@ -8,7 +8,7 @@ export default function About() {
       <div className="h-fit order-2 lg:order-1 place-self-start w-fit lg:w-full text-lg md:place-self-start md:text-xl 2xl:text-2xl">
         <h1 className={`${solway.className} text-3xl pb-8`}>
           Hey there! I’m{" "}
-          <span className="text-secondary dark:text-dark-primary">
+          <span className="text-secondary dark:text-dark-secondary">
             Nidhi Swamy
           </span>
           ,<br />a Software Engineer.
@@ -46,7 +46,7 @@ export default function About() {
       </div>
       <div className="order-3 lg:order-3 place-self-start lg:place-self-start xl:size-fit shadow-2xl">
         <Image
-          src="/assets/forest.jpg"
+          src="/me_co.jpg"
           alt="Denver, Colorado"
           height={1920}
           width={1281}

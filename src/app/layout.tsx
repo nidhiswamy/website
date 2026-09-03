@@ -23,7 +23,7 @@ export default function RootLayout({
       <Suspense fallback={<Loading />}>
         <body className={karla.className}>
           <NavBar />
-          <div className="selection:bg-secondary-light/[0.1] text-primary-dark h-full min-h-screen bg-primary dark:bg-primary-dark dark:text-primary-light/[0.8] flex flex-col items-center p-8 pt-20 xs:pt-0 md:pt-24">
+          <div className="selection:bg-secondary-light/[0.1] text-primary-dark h-full min-h-screen bg-primary dark:bg-primary-dark dark:text-primary-light/[0.8] flex flex-col items-center p-8 pt-24 xs:pt-0 md:pt-24">
             {children}
             <Analytics />
           </div>

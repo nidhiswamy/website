@@ -7,7 +7,7 @@ import { GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
 const links = [
   // { name: 'home', href: '/' },
   { name: "about", href: "/" },
-  { name: "experience", href: "/experience" },
+  { name: "work", href: "/work" },
   { name: "blog", href: "/blog" },
 ];
 
@@ -28,7 +28,7 @@ export default function NavLinks() {
                     "underline decoration-4 decoration-secondary dark:decoration-dark-secondary":
                       pathname === link.href ||
                       pathname.startsWith(link.href + "/"),
-                  }
+                  },
                 )}
               >
                 {link.name}

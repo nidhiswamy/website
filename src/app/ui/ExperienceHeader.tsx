@@ -1,6 +1,8 @@
 import { solway } from "../fonts";
-import { blogBlurb } from "@/utils/constants";
-import Tooltip from "./Tooltip";
+
+interface ExperienceHeaderProps {
+  label: string;
+}
 
 const headerStyle = [
   solway.className,
@@ -9,12 +11,10 @@ const headerStyle = [
 ].join(" ");
 const header = "flex w-full items-center justify-center mb-4";
 
-export default function BlogPageHeader() {
+export default function ExperienceHeader({ label }: ExperienceHeaderProps) {
   return (
     <div className={header}>
-      <Tooltip content={blogBlurb} position="bottom">
-        <span className={headerStyle}>Blog</span>
-      </Tooltip>
+      <span className={headerStyle}>{label}</span>
     </div>
   );
 }
