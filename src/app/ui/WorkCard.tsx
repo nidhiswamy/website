@@ -10,7 +10,7 @@ interface WorkCardProps {
 
 export default function WorkCard(props: WorkCardProps) {
   return (
-    <div className="flex flex-col items-center justify-between h-full w-72 sm:w-full">
+    <div className="flex flex-col items-center justify-between h-full">
       <div className="flex flex-col items-center sm:w-full">
         <div className="text-[22px] lg:text-xl xl:text-2xl font-bold text-center mb-1">
           {props.title}

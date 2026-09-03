@@ -12,34 +12,39 @@ interface ProjCardProps {
 
 export default function ProjectCard(props: ProjCardProps) {
   return (
-    <div className="flex flex-col w-72 sm:w-full h-full items-center">
-      <div className="mb-2 px-2 py-1 hover:bg-secondary-light/[0.2] transition duration-300 ease-in-out">
+    <div className="flex flex-col h-full items-center px-2">
+      <div className="mb-2 py-1 hover:bg-secondary-light/[0.2] transition duration-300 ease-in-out">
         <Link
           href={props.link}
           target="_blank"
-          className="flex flex-row gap-x-1"
+          className="flex flex-row gap-x-2"
         >
-          <div className="flex items-center pr-2 text-[22px] lg:text-xl xl:text-2xl font-bold">
+          <div className="flex items-center text-[22px] lg:text-xl xl:text-2xl font-bold">
             {props.name}
           </div>
-          {props.type === "EXTERNAL" && (
-            <Image
-              src="/assets/external-link.svg"
-              alt="External link icon"
-              height="26"
-              width="26"
-              className="object-contain filter brightness-0 dark:brightness-100"
-            />
-          )}
-          {props.type === "GITHUB" && (
-            <Image
-              src="/assets/github.svg"
-              alt="GitHub icon"
-              height="35"
-              width="35"
-              className="object-contain filter brightness-0 dark:brightness-100"
-            />
-          )}
+          <div className="hidden xs:block">
+            {props.type === "EXTERNAL" && (
+              <Image
+                src="/assets/external-link.svg"
+                alt=""
+                aria-hidden="true"
+                height={26}
+                width={26}
+                className="object-contain brightness-0 dark:brightness-100"
+              />
+            )}
+
+            {props.type === "GITHUB" && (
+              <Image
+                src="/assets/github.svg"
+                alt=""
+                aria-hidden="true"
+                height={35}
+                width={35}
+                className="object-contain brightness-0 dark:brightness-100"
+              />
+            )}
+          </div>
         </Link>
       </div>
       <div className="w-5/6 text-center text-lg xl:text-xl">{props.desc}</div>
