@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 interface BlogProps {
   slug: string;
@@ -10,14 +10,10 @@ interface BlogProps {
   tags?: string[];
 }
 
-
 export default function BlogPost(props: BlogProps) {
   return (
-    <Link
-      href={`/blog/${props.slug}`}
-      className="h-full max-h-72 w-full transition-none sm:transition sm:hover:bg-secondary-light/[0.1] dark:hover:bg-dark-secondary-light/[0.1] sm:hover:shadow-xl duration-300 ease-in-out"
-    >
-      <div className="border border-accent/15 dark:border-dark-accent/15 px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full w-full">
+    <Link href={`/blog/${props.slug}`} className="h-full max-h-72 w-full">
+      <div className="px-4 py-2 md:py-4 flex flex-col text-start sm:text-center items-start sm:items-center h-full w-full">
         <h1 className="text-xl font-extrabold md:text-2xl lg:text-3xl w-fit sm:w-10/12 sm:no-underline px-1.5 sm:px-0 py-1 sm:py-0 rounded sm:rounded-none sm:bg-none">
           {props.title}
         </h1>
